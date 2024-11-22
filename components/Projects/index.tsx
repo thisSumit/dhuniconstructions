@@ -50,7 +50,7 @@ const index = ({
   {projectItems.map((items) => (
     <Link 
       key={items.id}  // Use a unique identifier from the items object
-      href={`/project/${items.id}`} 
+      href={`/projects/${items.id}`} 
       className='project-link'
     >
           <div // Ensure to add a key to avoid React warnings
