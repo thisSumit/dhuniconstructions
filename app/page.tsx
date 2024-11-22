@@ -1,0 +1,61 @@
+'use client'
+import Contact from "@/components/Contact";
+import Description from "@/components/Description";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Lifestyle from "@/components/Lifestyle";
+import NewProject from "@/components/NewProject";
+import Preloader from "@/components/Preloader";
+import Projects from "@/components/Projects";
+import Testimonials from "@/components/Testimonials";
+import { AnimatePresence } from "framer-motion";
+import Lenis from "lenis";
+import { useEffect, useState } from "react";
+
+export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const lenis = new Lenis()
+
+lenis.on('scroll', (e: any) => {
+  console.log(e)
+})
+
+function raf(time: number) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
+  useEffect( () => {
+    (
+      async () => {
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+          const locomotiveScroll = new LocomotiveScroll();
+
+          setTimeout( () => {
+            setIsLoading(false);
+            document.body.style.cursor = 'default'
+            window.scrollTo(0,0);
+          }, 10)
+      }
+    )()
+  }, [])
+
+  
+  return (
+    <main className="overflow-hidden">
+    {/* <AnimatePresence mode='wait'>
+        {isLoading && <Preloader />}
+      </AnimatePresence> */}
+    <Hero/>
+    <Description/>
+    <NewProject/>
+    <Projects id={1}/>
+    <Lifestyle/>
+    <Testimonials/>
+    <Faq/>
+    </main>
+  );
+}
