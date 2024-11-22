@@ -8,7 +8,7 @@ import { ArrowRight, ArrowUpRight, PhoneIncomingIcon } from 'lucide-react';
 
 const index = () => {
 
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null); 
   const contentRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -22,9 +22,9 @@ const index = () => {
       });
 
       // Parallax effect for video
-      gsap.to(videoRef.current, {
+      gsap.to(imageRef.current, {
         scrollTrigger: {
-          trigger: videoRef.current,
+          trigger: imageRef.current,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
@@ -101,7 +101,7 @@ const index = () => {
           </div>
         </div>
         <div className='flex order-1 md:order-2 p-4 items-center justify-center'>
-          <img ref={videoRef} className='w-full' src="arctic.png" alt="" />
+        <img ref={imageRef} className='w-full' src="arctic.png" alt="Arctic Project" />
         </div>
       </div>
     </div>

@@ -31,7 +31,9 @@ const Index = () => {
             className="relative w-full max-w-[400px] h-[700px] overflow-hidden rounded-lg shadow-lg bg-black">
             {/* Video Element */}
             <video
-              ref={(el) => (videoRefs.current[index] = el)}
+              ref={(el) => {
+                videoRefs.current[index] = el;
+              }}
               autoPlay
               src={src}
               preload="auto"

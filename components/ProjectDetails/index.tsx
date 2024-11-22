@@ -6,6 +6,12 @@ import Contact from '../Contact';
 import Footer from '../Footer';
 
 export interface Property {
+  apara2: string;
+  ahead2: string;
+  aimg2: string | undefined;
+  aimg1: string | undefined;
+  apara1: string;
+  ahead1: string;
   bed: string;
   plot: string;
   amenities: string;
