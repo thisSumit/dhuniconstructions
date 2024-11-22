@@ -2,7 +2,6 @@
 
 import { useParams, useRouter } from 'next/navigation'; // Updated to use next/navigation
 import { portfolioItems } from '@/data'; // Adjust import path as needed
-import { ProjectDetail } from '@/components/ProjectDetail'; // Adjust import path
 import { Building2 } from 'lucide-react';
 import Header from '@/components/Header';
 import Contact from '@/components/Contact';

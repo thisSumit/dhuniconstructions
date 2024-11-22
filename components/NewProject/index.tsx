@@ -90,7 +90,7 @@ const index = () => {
                         </span>
                         <div className="absolute inset-0 -z-0 bg-gradient-to-r from- opacity-0 transition-opacity duration-300 group-hover:opacity-10" />
                     </button>
-              <button onClick={() => window.location.href = '/project/1'} className=" uppercase group relative overflow-hidden border-[1px] border-white bg-transparent md:px-8 md:py-4 px-6 py-4 text-black transition-all duration-300 hover:border-orange-400">
+              <button onClick={() => window.location.href = '/projects/1'} className=" uppercase group relative overflow-hidden border-[1px] border-white bg-transparent md:px-8 md:py-4 px-6 py-4 text-black transition-all duration-300 hover:border-orange-400">
                         <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">
                             Learn More
                             <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

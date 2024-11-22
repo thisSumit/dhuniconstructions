@@ -91,7 +91,7 @@ const Hero = () => {
           className="absolute bottom-20 left-0 right-0 flex justify-center gap-4 px-4"
         >
           <button 
-          onClick={() => window.location.href = '/project'}
+          onClick={() => window.location.href = '/projects'}
           className="group relative overflow-hidden bg-white md:px-8 md:py-4 px-6 py-4 text-black transition-transform duration-300">
             <span className="text-black text-nowrap text-sm relative z-10 flex uppercase items-center gap-1">
               Our Projects

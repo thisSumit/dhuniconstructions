@@ -35,7 +35,7 @@ const index = ({
         <h2 className="text-8xl text-nowrap">Our Projects</h2>
         </div>
         <div>
-        <button onClick={() => window.location.href = '/project'} className=" uppercase group relative overflow-hidden border-[1px] border-white bg-transparent md:px-8 md:py-4 px-2 py-1 text-black transition-all duration-300 hover:border-orange-400">
+        <button onClick={() => window.location.href = '/projects'} className=" uppercase group relative overflow-hidden border-[1px] border-white bg-transparent md:px-8 md:py-4 px-2 py-1 text-black transition-all duration-300 hover:border-orange-400">
                         <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">
                             All Projects
                             <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -50,7 +50,7 @@ const index = ({
   {projectItems.map((items) => (
     <Link 
       key={items.id}  // Use a unique identifier from the items object
-      href={`/projects/${items.id}`} 
+      href={`/project/${items.id}`} 
       className='project-link'
     >
           <div // Ensure to add a key to avoid React warnings

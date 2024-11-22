@@ -32,7 +32,6 @@ export const navItems = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About Us" },
   { path: "/projects", label: "Projects" },
-  { path: "/testimonials", label: "Testimonials" },
   { path: "/contact", label: "Contact Us" },
 ];
 
