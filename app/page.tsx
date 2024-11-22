@@ -46,30 +46,16 @@ export default function Home() {
       });
     }
   }, []);
-
-  const handleClick = async () => {
-
-    // Check if WhatApp installed, if yes open whatsapp else open whatsapp web
-
-    if (navigator.userAgent.includes('WhatsApp')) {
-      // WhatsApp is installed
-      window.open(`whatsapp://send?phone=8830256985`)
-    } else {
-      // WhatsApp is not installed, open WhatsApp Web
-      window.open('https://web.whatsapp.com/send?phone=8830256985', '_blank');
-    }
-  }
-
   
   return (
     <main className="overflow-hidden">
       <div className='bg-green-600 w-min z-50 p-2 rounded-full fixed 
-          bottom-5 right-4 cursor-pointer md:right-8' onClick={handleClick}>
+          bottom-5 right-4 cursor-pointer md:right-8' onClick={() => window.location.href = 'https://wa.link/9zmn5e'}>
         <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
       </div>
-    <AnimatePresence mode='wait'>
+    {/* <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence> */}
     <Hero/>
     <Description/>
     <NewProject/>

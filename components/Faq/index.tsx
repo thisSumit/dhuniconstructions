@@ -9,57 +9,43 @@ import {
 
 const index = () => {
     return (
-        <div className="flex flex-col md:p-[200px] py-[200px] px-2">
+        <div className="flex text-white flex-col md:p-[200px] py-[200px] px-2">
             <div>
                 <p className='text-lg font-thin'>FAQ</p>
                 <h2 className="text-8xl">Frequently Ask Questions</h2>
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                        <AccordionTrigger className='text-xl'>Why to Choose Us?</AccordionTrigger>
+                        <AccordionTrigger className='text-xl'>What sets Dhuni Constructions Pvt. Ltd. apart from other builders in Nagpur?</AccordionTrigger>
                         <AccordionContent className='text-xl'>
-                        Choosing Dhuni Construction Pvt. Ltd. means opting for unparalleled luxury, quality, and simplicity in every aspect of your new home. Our wave-inspired architectural designs set us apart, creating a unique living experience that combines aesthetic beauty with functional elegance. With a commitment to using the highest quality materials and incorporating the latest construction technologies, we ensure that every detail meets the highest standards. Our dedicated team of professionals works tirelessly to transform your vision into reality, providing personalized service and unmatched craftsmanship.
+                        We focus on luxury, quality, and simplicity in every project. Our modern designs and top-quality construction ensure that each of our homes is a symbol of elegance and functionality.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-2">
-                        <AccordionTrigger className='text-xl'>Why you want to Buy Under Construction Flat?</AccordionTrigger>
+                        <AccordionTrigger className='text-xl'>What is the price range for apartments in your upcoming projects?</AccordionTrigger>
                         <AccordionContent className='text-xl'>
-                        Buying an under-construction flat offers several advantages:
-
-Early Bird Offers: Gain access to pre-launch prices and exclusive offers not available once the project is completed.
-
-Customization: Personalize your new home with finishes and fixtures that reflect your style.
-
-Modern Amenities: Enjoy the latest amenities and designs that cater to contemporary living.
-
-Investment Potential: Benefit from potential price appreciation as the project nears completion.
-
-Flexible Payment Plans: Take advantage of flexible payment options during the construction phase.
+                        The prices vary depending on factors such as size, location, and amenities. However, we are committed to offering luxurious apartments at competitive prices, providing great value for our clients.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-3">
-                        <AccordionTrigger className='text-xl'>How to Contact Us?</AccordionTrigger>
+                        <AccordionTrigger className='text-xl'>How can I book an apartment with Dhuni Constructions?</AccordionTrigger>
                         <AccordionContent className='text-xl'>
-                        Dhuni Construction Pvt. Ltd. are well known brand in Central India. You can directly come to Office or Can call on give Phone Number
-
-Address: Flat no. 202, Ganraj Sankul, Pratap Nagar, Nagpur, Maharashtra 440022
-
-Phone Number: 079726 70402
+                        Booking an apartment is simple. You can reach out via our website or contact our customer service for personalized assistance. We also offer online booking options for added convenience.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-4">
-                        <AccordionTrigger className='text-xl'>Is it accessible?</AccordionTrigger>
+                        <AccordionTrigger className='text-xl'>What amenities are included in your apartments?</AccordionTrigger>
                         <AccordionContent className='text-xl'>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                        Our apartments are equipped with premium amenities, including modern kitchens, spacious living areas, fitness centers, community spaces, and more, ensuring your comfort and convenience.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-5">
-                        <AccordionTrigger className='text-xl'>Is it accessible?</AccordionTrigger>
+                        <AccordionTrigger className='text-xl'>Can I visit the site before making a purchase?</AccordionTrigger>
                         <AccordionContent className='text-xl'>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                        Yes, we encourage all potential buyers to visit our project sites. Our team will be happy to give you a guided tour and answer any questions you may have.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>

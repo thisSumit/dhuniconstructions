@@ -41,7 +41,7 @@ const index = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full md:mt-[200px] mx-4">
-      <div className='md:mx-10 items-center m-0 grid object-center grid-cols-1 md:grid-cols-2 gap-0'>
+      <div className='md:mx-10 pr-5 items-center m-0 grid object-center grid-cols-1 md:grid-cols-2 gap-0'>
         <div className='flex order-2 p-4 md:order-1 flex-col justify-center items-start'>
           <div>
               <p className='text-lg font-thin'>Upcoming Project</p>
@@ -100,7 +100,7 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className='flex order-1 md:order-2 p-4 items-center justify-center'>
+        <div className='flex w-full order-1 md:order-2 p-4 items-center justify-center'>
         <img ref={imageRef} className='w-full' src="arctic.png" alt="Arctic Project" />
         </div>
       </div>

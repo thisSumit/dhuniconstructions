@@ -82,29 +82,29 @@ const Header = () => {
     return (
         <div className='w-screen top-0 left-0 flex flex-col fixed justify-between items-center z-30 bg-gray-800' ref={container}>
             <div ref={logo} className='py-4 px-4 md:px-6 text-black w-full flex justify-between items-center'>
-                <Link href="/" className="flex items-end capitalize gap-2">
-                    <img ref={logoImg} src={logoSrc} alt="Company Logo" className='w-[38px]' />
-                    <p className='text-sm leading-4'>
-                        <span className={`${myFont.className} flex flex-col text-4xl`}>DHUNI</span>
+                <Link href="/" className="flex tracking-wider items-end capitalize gap-2">
+                    <img ref={logoImg} src={logoSrc} alt="Company Logo" className='w-[32px]' />
+                    <p className='md:text-4xl flex flex-col md:flex-row md:gap-1 leading-4'>
+                        <span className={`${myFont.className}`}>DHUNI</span>
                         CONSTRUCTIONS PVT. LTD.
                     </p>
                 </Link>
                 <p onClick={toggleMenu} className="transition p-3 cursor-pointer">Menu</p>
             </div>
 
-            <div className={`menu-overlay fixed top-0 left-0 w-full h-full bg-white flex flex-col justify-between items-center py-4 px-4 md:px-6 ${isMenuOpen ? 'block' : 'hidden'}`}>
-                <div className='w-full flex justify-between items-center'>
-                    <Link href="/" className="menu-logo flex items-end capitalize gap-2 mb-4">
-                        <img src="logo org.svg" alt="Company Logo" className='w-[38px]' />
-                        <p className='text-sm text-black leading-4'>
-                            <span className={`${myFont.className} flex text-black flex-col text-4xl`}>DHUNI</span>
-                            CONSTRUCTIONS PVT. LTD.
-                        </p>
-                    </Link>
-                    <p onClick={toggleMenu} className="text-black transition p-3 cursor-pointer">Close</p>
-                </div>
+            <div className={`menu-overlay fixed top-0 left-0 w-full h-full bg-white flex flex-col justify-between items-center ${isMenuOpen ? 'block' : 'hidden'}`}>
+            <div className='py-4 px-4 md:px-6 text-black w-full flex justify-between items-center'>
+                <Link href="/" className="flex tracking-wider items-end capitalize gap-2">
+                    <img src='logo org.svg' alt="Company Logo" className='w-[32px]' />
+                    <p className='md:text-4xl flex flex-col text-black md:flex-row md:gap-1 leading-4'>
+                        <span className={`${myFont.className} text-black`}>DHUNI</span>
+                        CONSTRUCTIONS PVT. LTD.
+                    </p>
+                </Link>
+                <p onClick={toggleMenu} className="transition p-3 text-black cursor-pointer">Close</p>
+            </div>
 
-                <div className="menu-copy flex h-full w-full flex-col">
+                <div className="menu-copy p-8 flex h-full w-full flex-col">
                     <div className="menu-links group flex flex-col gap-4">
                         {navItems.map((link, index) => (
                             <div className="menu-links-item" key={index}>

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 import { words, location } from '@/data';
+import { MapPin } from 'lucide-react';
 
 export default function Index() {
     const [index, setIndex] = useState(0);
@@ -40,7 +41,7 @@ export default function Index() {
             <>
                 <motion.p variants={opacity} initial="initial" animate="enter">{words[index].toUpperCase()}
                     <span>
-                    {location[index]}
+                    <MapPin width='24px'/> {location[index]}
                     </span>
                 </motion.p>
                 <svg>
