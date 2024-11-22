@@ -19,7 +19,9 @@ export default function index() {
                         })
                     }
                 </h2>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>For over 20 years, we've mastered the art of crafting impeccable lifestyle standards that are both luxurious and sustainable. Experience the future of Dhuni Constructions Pvt. Ltd., where timeless elegance and modern sustainability converge to create a truly unparalleled living experience.</motion.p>
+                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>Welcome to Dhuni Constructions Pvt. Ltd., where luxury meets simplicity. With a rich history in building high-quality residential spaces, we specialize in modern architectural designs that combine elegance and practicality. Our projects are tailored to meet the needs of urban families, ensuring that every home we create embodies comfort, style, and quality.
+
+</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     {/* <Rounded className={styles.button}>
                         <p><a href="/about">About Us</a></p>

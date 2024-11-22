@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 import localFont from 'next/font/local';
 import Link from 'next/link';
 const myFont = localFont({ src: '../ui/MyFont.ttf', weight: '400' });
@@ -18,20 +18,23 @@ export default function Footer() {
                     </p>
                 </Link>
             <p className="mb-4 max-w-md text-gray-400">
-              Experience the pinnacle of Dhuni Constructions Pvt. Ltd. with our exceptional properties and unparalleled service.
+            At Dhuni Constructions Pvt. Ltd., we build homes that embody trust, quality, and excellence, crafted with superior materials and a commitment to value.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+              <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+              <a href="https://www.instagram.com/dhuniconstructions/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="https://www.youtube.com/@DhuniConstructionsPvt.Ltd." className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -40,23 +43,23 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
-                  Properties
+                <a href="/projects" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                  Projects
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/contact" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
                   Contact Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
-                  Careers
                 </a>
               </li>
             </ul>
@@ -66,17 +69,17 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/privacy" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/term" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/disclaimer" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
                   Disclaimer
                 </a>
               </li>

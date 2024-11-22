@@ -10,6 +10,7 @@ import Preloader from "@/components/Preloader";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import { AnimatePresence } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
 
@@ -36,7 +37,7 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = 'default';
         window.scrollTo(0, 0);
-      }, 10);
+      }, 5000);
 
       // Dynamically import LocomotiveScroll after mounting
       import('locomotive-scroll').then((module) => {
@@ -45,12 +46,30 @@ export default function Home() {
       });
     }
   }, []);
+
+  const handleClick = async () => {
+
+    // Check if WhatApp installed, if yes open whatsapp else open whatsapp web
+
+    if (navigator.userAgent.includes('WhatsApp')) {
+      // WhatsApp is installed
+      window.open(`whatsapp://send?phone=8830256985`)
+    } else {
+      // WhatsApp is not installed, open WhatsApp Web
+      window.open('https://web.whatsapp.com/send?phone=8830256985', '_blank');
+    }
+  }
+
   
   return (
     <main className="overflow-hidden">
-    {/* <AnimatePresence mode='wait'>
+      <div className='bg-green-600 w-min z-50 p-2 rounded-full fixed 
+          bottom-5 right-4 cursor-pointer md:right-8' onClick={handleClick}>
+        <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
+      </div>
+    <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
-      </AnimatePresence> */}
+      </AnimatePresence>
     <Hero/>
     <Description/>
     <NewProject/>
