@@ -16,33 +16,35 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
-  const lenis = new Lenis()
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const lenis = new Lenis();
 
-lenis.on('scroll', (e: any) => {
-  console.log(e)
-})
+      lenis.on('scroll', (e: any) => {
+        console.log(e);
+      });
 
-function raf(time: number) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-requestAnimationFrame(raf)
-
-  useEffect( () => {
-    (
-      async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
-
-          setTimeout( () => {
-            setIsLoading(false);
-            document.body.style.cursor = 'default'
-            window.scrollTo(0,0);
-          }, 10)
+      function raf(time: number) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
       }
-    )()
-  }, [])
 
+      requestAnimationFrame(raf);
+
+      // Set timeout for loading and other DOM manipulations
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = 'default';
+        window.scrollTo(0, 0);
+      }, 10);
+
+      // Dynamically import LocomotiveScroll after mounting
+      import('locomotive-scroll').then((module) => {
+        const LocomotiveScroll = module.default;
+        const locomotiveScroll = new LocomotiveScroll();
+      });
+    }
+  }, []);
   
   return (
     <main className="overflow-hidden">
