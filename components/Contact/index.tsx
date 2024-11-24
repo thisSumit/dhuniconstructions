@@ -55,7 +55,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">Email Us</p>
-                  <p className="text-gray-600">dhuniconstructions@gmail.com</p>
+                  <p className="text-gray-600">dhuniconstructionspvtltd@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -115,10 +115,11 @@ export default function Contact() {
                   className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
                   required
                 >
-                  <option className='text-black' value="">Select a property</option>
-                  <option className='text-black' value="grand-residence">The Grand Residence</option>
-                  <option className='text-black' value="sky-view">Sky View Penthouse</option>
-                  <option className='text-black' value="riverside">Riverside Haven</option>
+                  <option className='text-black' value="">Select a apartments</option>
+                  <option className='text-black' value="arctis">Arctic Apartments & Commercials</option>
+                  <option className='text-black' value="atlantic">Atlantic Apartments & Commercials</option>
+                  <option className='text-black' value="neptune">Neptune Apartments & Commercials</option>
+                  <option className='text-black' value="uranus">Uranus Apartments</option>
                 </select>
               </div>
             </div>

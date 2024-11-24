@@ -4,7 +4,7 @@ import { slideUp } from './animation';
 import styles from './style.module.scss';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, ArrowUpRight, PhoneIncomingIcon } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, MapPin, PhoneIncomingIcon } from 'lucide-react';
 
 const index = () => {
 
@@ -46,12 +46,9 @@ const index = () => {
           <div>
               <p className='text-lg font-thin'>Upcoming Project</p>
               <img className='md:w-[280px] w-[200px]' src="arctic-logo.png" alt="" />
-              <p className='max-w-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere nisi voluptates voluptatem reiciendis deleniti consectetur perspiciatis sed, exercitationem nulla explicabo quia inventore autem, facilis temporibus, sint magni. Illum, provident.</p>
-            <div className='my-6'>
-            <p>Location: <span>Arctic</span></p>
-            <p>Category: <span>Construction</span></p>
-            <p>Start Date: <span>12/12/2022</span></p>
-            <p>End Date: <span>12/12/2023</span></p>
+              <p className='max-w-3xl'>Discover Arctic Luxurious Apartments, Where modern design meets premium living. With sleek architecture, curving balconies, and 6+ world-class amenities, Arctic offers an elevated lifestyle of elegance, comfort, and innovation.</p>
+            <div className='my-6 flex gap-2 text-white'>
+            <MapPin/><p>Location: <span>Jaitala Road, Nagpur</span></p>
             </div>
           </div>
 

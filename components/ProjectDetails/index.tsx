@@ -124,7 +124,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                 </div>
                 <p className="text-gray-600 mb-6">{project.description}</p>
 
-                <div className="grid grid-cols-2 my-10 gap-6">
+                <div className="md:grid flex flex-col grid-cols-2 my-10 md:gap-6 gap-10">
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-4">Property Features</h3>
                     <ul className="space-y-3">
@@ -137,18 +137,8 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-4">Project Timeline</h3>
-                    <div className="space-y-3 text-gray-600">
-                      <div className="flex text-4xl items-center">
-                        <Calendar className="w-5 h-5 mr-2 text-blue-600" />
-                        <span>Completion: {project.complition}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
                     <h3 className="font-semibold text-gray-900 mb-4">Nearby Locations</h3>
-                    <div className='flex items-center md:justify-between gap-10'>
+                    <div className='flex items-center gap-10'>
 
                     <ul className="space-y-3">
                       {project.alocation.map((alocation, index) => (
@@ -160,7 +150,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </ul>
                     <ul className="space-y-3">
                       {project.atime.map((atime, index) => (
-                        <li key={index} className="flex items-center text-gray-600">
+                        <li key={index} className="flex text-nowrap items-start w-full text-gray-600">
                           <span className="capitalize text-4xl">{atime}</span>
                         </li>
                       ))}
@@ -168,6 +158,17 @@ export function ProjectDetails({ project }: { project: Property }) {
 
                     </div>
                   </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">Project Timeline</h3>
+                    <div className="space-y-3 text-gray-600">
+                      <div className="flex text-4xl items-center">
+                        <Calendar className="w-5 h-5 mr-2 text-blue-600" />
+                        <span>Completion: {project.complition}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
 
               <div className='md:p-8 mt-[80px] md:mt-0'>
@@ -198,7 +199,7 @@ export function ProjectDetails({ project }: { project: Property }) {
               <div className="border-l shadow-sm p-8 sticky top-20">
                 <div className="space-y-4">
                   <button
-                    onClick={() => window.location.href = `https://wa.me/8830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`}
+                    onClick={() => window.location.href = `https://wa.me/+918830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`}
                     className="w-full bg-blue-600 border text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                     Download Brochure
                   </button>
@@ -218,7 +219,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                   <h3 className="font-semibold text-gray-900 mb-4">Contact Information</h3>
                   <div className="space-y-3 text-gray-600">
                     <p>Email: dhuniconstructionspvtltd@gmail.com</p>
-                    <p>Phone: +91 123 456 7890</p>
+                    <p>Phone: +91 8830256985</p>
                     <p>Office Hours: 9:00 AM - 6:00 PM</p>
                   </div>
                 </div>

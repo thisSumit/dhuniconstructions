@@ -36,8 +36,7 @@ const Page = () => {
                 )}
               </div>
               <div className="bottom-0 left-0 pt-2 text-black">
-                <p className="text-gray-300 text-6xl leading-7 mb-1 font-bold">{items.title}</p>
-                <p className="text-2xl leading-5 font-light">{items.description}</p>
+                <p className="text-gray-300 md:text-6xl text-4xl leading-6 mb-1 font-bold">{items.title}</p>
                 <div className="flex items-center py-1 space-x-2 text-orange-400 hover:text-orange-300 transition-colors uppercase">
                   <span>View Project</span>
                   <ArrowRight className="w-4 h-4" />

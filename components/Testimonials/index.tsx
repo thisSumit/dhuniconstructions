@@ -7,7 +7,7 @@ const Index = () => {
     Array(8).fill(true) // Initialize mute state for each video
   );
 
-  const videoSources = ["life1.mp4", "life2.mp4", "life3.mp4", "life4.mp4", "life1.mp4", "life2.mp4", "life3.mp4", "life4.mp4"];
+  const videoSources = ["life1.mp4", "life2.mp4", "life3.mp4", "life4.mp4"];
 
   const toggleMute = (index: number) => {
     if (videoRefs.current[index]) {
