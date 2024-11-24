@@ -4,8 +4,11 @@ import { useEffect } from 'react';
 import Headers from '../Header';
 import Contact from '../Contact';
 import Footer from '../Footer';
+import './style.css';
 
 export interface Property {
+  atime: string[];
+  alocation: string[];
   apara2: string;
   ahead2: string;
   aimg2: string | undefined;
@@ -88,12 +91,12 @@ export function ProjectDetails({ project }: { project: Property }) {
               <div className="md:p-8 mb-8">
               <div className="mb-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Price</h3>
-                  <div className="flex items-center text-3xl font-bold text-blue-600">
+                  <div className="flex items-center text-8xl font-bold text-blue-600">
                     <IndianRupee className="w-8 h-8 mr-2" />
                     <span>{project.price}</span>
                   </div>
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">About This Property</h2>
+                <h3 className="font-bold text-gray-900">About This Property</h3>
                 <div className='grid border-b pb-5 gap-4 md:grid-cols-2 grid-cols-1 my-4 text-nowrap'>
                   <div className='flex gap-2 items-center justify-start'>
                     <BedDouble/>
@@ -143,6 +146,28 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </div>
                   </div>
                 </div>
+                <div>
+                    <h3 className="font-semibold text-gray-900 mb-4">Nearby Locations</h3>
+                    <div className='flex items-center md:justify-between gap-10'>
+
+                    <ul className="space-y-3">
+                      {project.alocation.map((alocation, index) => (
+                        <li key={index} className="flex items-center text-gray-600">
+                          <MapPin className="w-5 h-5 mr-2 text-green-500" />
+                          <span className="capitalize text-4xl">{alocation}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <ul className="space-y-3">
+                      {project.atime.map((atime, index) => (
+                        <li key={index} className="flex items-center text-gray-600">
+                          <span className="capitalize text-4xl">{atime}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    </div>
+                  </div>
               </div>
 
               <div className='md:p-8 mt-[80px] md:mt-0'>
@@ -173,7 +198,7 @@ export function ProjectDetails({ project }: { project: Property }) {
               <div className="border-l shadow-sm p-8 sticky top-20">
                 <div className="space-y-4">
                   <button
-                    onClick={() => window.location.href = '#'}
+                    onClick={() => window.location.href = `https://wa.me/8830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`}
                     className="w-full bg-blue-600 border text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                     Download Brochure
                   </button>
