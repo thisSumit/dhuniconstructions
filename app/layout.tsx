@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Whatsapp from "@/components/common/Whatsapp";
 
 const roboto = Roboto({
   subsets: ["latin"], weight: ["300", "700"],
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${cormorant.className} tracking-wider antialiased box-content`}>
         <Header/>
+        <Whatsapp/>
         {children}
         <Contact/>
     <Footer/>

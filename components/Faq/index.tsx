@@ -9,7 +9,7 @@ import {
 
 const index = () => {
     return (
-        <div className="flex text-white flex-col md:p-[200px] py-[200px] px-2">
+        <div className="flex text-white justify-start flex-col md:p-[200px] py-[200px] px-2">
             <div>
                 <p className='text-lg font-thin'>FAQ</p>
                 <h2 className="text-8xl">Frequently Ask Questions</h2>

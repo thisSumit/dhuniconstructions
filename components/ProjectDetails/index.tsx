@@ -50,7 +50,7 @@ export function ProjectDetails({ project }: { project: Property }) {
   return (
     <div>
       <div className="bg-gray-50 text-white my-[100px] py-12">
-        <div className="lg:px-[200px] mx-auto px-4 sm:px-6">
+        <div className="mx-auto px-4 sm:px-6">
           {/* Project Header */}
           <div className="mb-8">
             <p>{project.event}</p>
@@ -97,17 +97,11 @@ export function ProjectDetails({ project }: { project: Property }) {
                   </div>
                 </div>
                 <h3 className="font-bold text-gray-900">About This Property</h3>
-                <div className='grid border-b pb-5 gap-4 md:grid-cols-2 grid-cols-1 my-4 text-nowrap'>
+                <div className='grid border-b pb-5 gap-4 grid-cols-1 my-4 text-nowrap'>
                   <div className='flex gap-2 items-center justify-start'>
                     <BedDouble/>
                     <p className='font-normal md:text-6xl text-4xl'>{project.bed}</p>
-                    <p className='text-2xl text-center leading-5'>Luxurious Apartments</p>
-                  </div>
-
-                  <div className='flex gap-2 items-center justify-start'>
-                    <LandPlot/>
-                    <p className='font-normal md:text-6xl text-4xl'>{project.plot}</p>
-                    <p className='text-2xl text-center leading-5'>Sq. Ft. Plot Size</p>
+                    <p className='text-2xl text-center leading-5'>Apartments</p>
                   </div>
 
                   <div className='flex gap-2 items-center justify-start'>
@@ -127,9 +121,9 @@ export function ProjectDetails({ project }: { project: Property }) {
                 <div className="md:grid flex flex-col grid-cols-2 my-10 md:gap-6 gap-10">
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-4">Property Features</h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 capitalize font-sans font-light">
                       {project.features.map((feature, index) => (
-                        <li key={index} className="flex items-center text-gray-600">
+                        <li key={index} className="flex capitalize items-center text-gray-600">
                           <Check className="w-5 h-5 mr-2 text-green-500" />
                           <span className="capitalize text-4xl">{feature}</span>
                         </li>
@@ -140,17 +134,17 @@ export function ProjectDetails({ project }: { project: Property }) {
                     <h3 className="font-semibold text-gray-900 mb-4">Nearby Locations</h3>
                     <div className='flex items-center gap-10'>
 
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 capitalize font-sans font-light">
                       {project.alocation.map((alocation, index) => (
-                        <li key={index} className="flex items-center text-gray-600">
+                        <li key={index} className="flex capitalize items-center text-gray-600">
                           <MapPin className="w-5 h-5 mr-2 text-green-500" />
                           <span className="capitalize text-4xl">{alocation}</span>
                         </li>
                       ))}
                     </ul>
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 capitalize font-sans font-light">
                       {project.atime.map((atime, index) => (
-                        <li key={index} className="flex text-nowrap items-start w-full text-gray-600">
+                        <li key={index} className="flex capitalize text-nowrap items-start w-full text-gray-600">
                           <span className="capitalize text-4xl">{atime}</span>
                         </li>
                       ))}
@@ -208,11 +202,11 @@ export function ProjectDetails({ project }: { project: Property }) {
                     className="w-full bg-white text-black border border-blue-600 text-blue-600 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                     Contact Now
                   </button>
-                  <button
+                  {/* <button
                     onClick={() => window.location.href = 'https://cal.com/avantula'}
                     className="w-full bg-blue-600 border text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                     Schedule a Visit
-                  </button>
+                  </button> */}
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-gray-200">
@@ -220,7 +214,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                   <div className="space-y-3 text-gray-600">
                     <p>Email: dhuniconstructionspvtltd@gmail.com</p>
                     <p>Phone: +91 8830256985</p>
-                    <p>Office Hours: 9:00 AM - 6:00 PM</p>
+                    <p>Office Hours: 9:00 AM - 9:00 PM</p>
                   </div>
                 </div>
               </div>

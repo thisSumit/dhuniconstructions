@@ -49,10 +49,6 @@ export default function Home() {
   
   return (
     <main className="overflow-hidden">
-      <div className='bg-green-600 w-min z-50 p-2 rounded-full fixed 
-          bottom-5 right-4 cursor-pointer md:right-8' onClick={() => window.location.href = 'https://wa.link/9zmn5e'}>
-        <FaWhatsapp color='white' className='w-7 h-7 md:w-10 md:h-10' />
-      </div>
     {/* <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence> */}
