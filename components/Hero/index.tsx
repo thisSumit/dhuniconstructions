@@ -51,7 +51,6 @@ const Hero = () => {
       <video
         ref={videoRef}
         autoPlay
-        preload='auto'
         loop
         muted={isMuted}
         playsInline

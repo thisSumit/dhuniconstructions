@@ -36,7 +36,6 @@ const Index = () => {
               }}
               autoPlay
               src={src}
-              preload="auto"
               muted={isMutedArray[index]}
               playsInline
               loop
