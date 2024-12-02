@@ -1,0 +1,46 @@
+.introduction{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #141516;
+    svg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: calc(100% + 200px);
+        path{
+            fill: #141516;
+        }
+    }
+    p{
+        display: flex;
+        color: white;
+        font-size: 42px;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        z-index: 1;
+        flex-direction: column;
+        gap: 12px;
+        text-transform: capitalize;
+        span{
+        font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction{
+        p{
+            font-size: 24px;
+            gap: 6px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+}
