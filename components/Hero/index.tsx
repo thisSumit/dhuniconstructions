@@ -53,10 +53,9 @@ const Hero = () => {
         autoPlay
         loop
         muted={isMuted}
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover scale-105"
+        className="absolute z-0 h-full w-full object-cover scale-105"
       >
-        <source src='video.mp4' type="video/mp4" />
+        <source src='video.mp4'/>
       </video>
 
       {/* Gradient Overlay with Parallax */}

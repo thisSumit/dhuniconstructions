@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: { default:"Dhuni Constructions Pvt. Ltd.", 
     template: "%s - Dhuni Constructions Pvt. Ltd.",
   },
-  description: "Dhuni Constructions Pvt. Ltd. is a construction company based in Nagpur, India. Dhuni Constructions Pvt. Ltd. develops Luxurious Flats and Commercials Projects in Nagpur.", 
+  description: "Dhuni Constructions Pvt. Ltd. is a construction company based in Nagpur, India. Dhuni Constructions Pvt. Ltd. sell flats in Nagpur. Dhuni Constructions Pvt. Ltd. also sell Commercial Projects in Nagpur.", 
   keywords: ['Flat in Nagpur', 'Apartments in Nagpur', 'Affordable Flat in Nagpur', 'flat on rent in nagpur','Flat in Jaitala Nagpur', 'Flats near IT Park Nagpur', 'Amit Tarekar', 'Swapnil Gode','Luxurious Flats in Nagpur', 'Commercial Projects in Nagpur', 'Dhuni Constructions Pvt. Ltd.'],
 };
 

@@ -1,9 +1,5 @@
 import React, { useLayoutEffect, useRef } from 'react'
-import { useInView, motion } from 'framer-motion';
-import { slideUp } from './animation';
-import styles from './style.module.scss';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ArrowUpRight, MapPin, PhoneIncomingIcon } from 'lucide-react';
 
 const index = () => {
@@ -44,7 +40,7 @@ const index = () => {
       <div className='md:mx-10 pr-5 items-center m-0 grid object-center grid-cols-1 md:grid-cols-2 gap-0'>
         <div className='flex order-2 md:order-1 flex-col justify-center items-start'>
           <div>
-              <p className='text-lg font-thin'>Upcoming Project</p>
+              <h2 className='text-4xl font-thin'>Upcoming Project</h2>
               <img className='md:w-[280px] w-[200px]' src="arctic-logo.png" alt="" />
               <p className='max-w-3xl'>Discover Arctic Luxurious Apartments, Where modern design meets premium living. With sleek architecture, curving balconies, and 6+ world-class amenities, Arctic offers an elevated lifestyle of elegance, comfort, and innovation.</p>
             <div className='my-6 flex gap-2 text-white'>
@@ -97,7 +93,7 @@ const index = () => {
             </div>
           </div>
         </div>
-        <div className='flex w-full order-1 md:order-2 p-4 items-center justify-center'>
+        <div className='flex h-[550px] relative w-full object-cover order-1 md:order-2 p-4 lg:h-full items-center justify-center'>
         <img ref={imageRef} className='w-full' src="arctic.png" alt="Arctic Project" />
         </div>
       </div>

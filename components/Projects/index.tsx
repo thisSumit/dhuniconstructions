@@ -36,7 +36,7 @@ const index = ({
         </div>
         <div>
         <button onClick={() => window.location.href = '/flats-in-nagpur-for-sale'} className="uppercase group relative overflow-hidden border-[1px] border-white bg-transparent md:px-8 md:py-4 px-1 py-1 text-black transition-all duration-300 hover:border-orange-400">
-                        <span className="text-nowrap text-[12px] relative z-10 flex items-center gap-2">
+                        <span className="text-nowrap text-[10px] relative z-10 flex items-center md:gap-2 gap-1">
                             All Projects
                             <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                         </span>
