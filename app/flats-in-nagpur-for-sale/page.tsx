@@ -15,6 +15,7 @@ const Page = () => {
           <h2 className="text-8xl text-nowrap">Our All Projects</h2>
         </div>
       </div>
+        <p>Looking for apartments for sale in Nagpur? Your search ends here! Dhuni Constructions Pvt. Ltd. offers premium 2 BHK flats in Nagpur, 3 BHK flats in Nagpur, and luxury apartments in Nagpur designed to elevate your lifestyle. Whether you’re interested in flats for sale, flats in Nagpur city, or new flats in Nagpur, we have the perfect home for you.</p>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6 w-full">
@@ -46,6 +47,14 @@ const Page = () => {
           </Link>
         ))}
       </div>
+      <p>Explore a range of real estate apartments tailored for modern living. From 2 BHK apartments in Nagpur to spacious 3 BHK flats in Nagpur for sale, find your dream home with competitive pricing and unmatched quality. Looking for Nagpur 2 BHK flat prices or Nagpur 3 BHK flat prices? Dhuni Constructions provides transparent pricing and value-driven options for your investment.</p>
+      <p>Our luxurious flats in Nagpur include state-of-the-art amenities and prime locations to offer an exceptional living experience. Whether you're looking to buy apartments in Nagpur, purchase a flat, or explore flats for sale in Nagpur, Dhuni Constructions is here to help you find the best deal.
+
+Planning to buy a flat in Nagpur or searching for flats on rent in Nagpur? With a portfolio of full apartments for sale, 2 BHK flats for sale in Nagpur, and 3 BHK luxury flats in Nagpur, we ensure options that suit every need.
+
+Choose Dhuni Constructions Pvt. Ltd. for high-quality, reliable real estate for apartments near you. Contact us today to explore our latest projects and discover the perfect 2 or 3 BHK flats in Nagpur to call home.
+
+Your dream home is just a visit away!</p>
     </div>
   );
 };
