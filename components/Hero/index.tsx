@@ -63,7 +63,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-cover scale-105"
       >
         <source
-          src={`/video.mp4`} // Prevent caching issues
+          src={`/dhunihome.mp4`} // Prevent caching issues
           type="video/mp4"
         />
       </video>
