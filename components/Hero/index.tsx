@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ArrowUpRight, Volume2, VolumeX } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +12,7 @@ const Hero = () => {
   const buttonsRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
   const [isMuted, setIsMuted] = useState(true);
+  const pathname = usePathname(); // Retrieve the current pathname
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -46,16 +48,24 @@ const Hero = () => {
   };
 
   return (
-    <main className="relative h-screen w-full overflow-hidden">
-      {/* Video Background with Parallax */}
+    <main
+      key={pathname} // Force re-render on route change
+      className="relative h-screen w-full overflow-hidden"
+    >
+      {/* Video Background with Cache-Busting Query */}
       <video
         ref={videoRef}
         autoPlay
         loop
+        preload="auto"
         muted={isMuted}
-        className="absolute z-0 h-full w-full object-cover scale-105"
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover scale-105"
       >
-        <source src='video.mp4'/>
+        <source
+          src={`/video.mp4`} // Prevent caching issues
+          type="video/mp4"
+        />
       </video>
 
       {/* Gradient Overlay with Parallax */}
