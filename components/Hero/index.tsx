@@ -88,8 +88,8 @@ const Hero = () => {
         >
           <div className="text-center z-1">
             <ul
-              className={`${mainFont.className} md:text-10xl text-white uppercase text-6xl sm:8xl  list-none items-center justify-center flex flex-row
-              gap-5 md:gap-8 tracking-tight   2xl:text-11xl `}
+              className={`${mainFont.className} md:text-[48px] text-[32px]  text-white uppercase  list-none items-center justify-center flex flex-row
+              gap-5 md:gap-8 tracking-wide`}
             >
               <li
                 style={{ textShadow: "rgba(255,213,0,0.58) 0px 0px 7px" }}
@@ -110,10 +110,6 @@ const Hero = () => {
                 Simplicity
               </li>
             </ul>
-            <p className="pTagForAnimation mx-auto mb-8 max-w-2xl text-xs sm:text-sm leading-4 text-white md:text-xl font-thin">
-              Experience the perfect blend of sophistication, innovation, and
-              timeless design in every project we create.
-            </p>
           </div>
         </div>
 
@@ -144,12 +140,12 @@ const Hero = () => {
 
         <div
           onClick={toggleMute}
-          className="absolute z-10 bottom-4 left-4 rounded-full bg-transparent text-white"
+          className="absolute z-10 bottom-4 left-4 rounded-full bg-white text-black p-2"
         >
           {isMuted ? (
-            <VolumeX className="h-[38px] w-[38px]" />
+            <VolumeX className="h-[28px] w-[28px]" />
           ) : (
-            <Volume2 className="h-[38px] w-[38px]" />
+            <Volume2 className="h-[28px] w-[28px]" />
           )}
         </div>
       </div>

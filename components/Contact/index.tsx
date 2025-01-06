@@ -57,7 +57,7 @@ export default function Contact() {
     <div id='contact' className="bg-blue text-white py-[100px] p-3 md:px-[200px]">
       <div>
         <p className='text-lg font-thin'>Get in Touch</p>
-        <h2 className="text-8xl">Contact Us</h2>
+        <h2 className={`${headingFont2.className} text-8xl`}>Contact Us</h2>
       </div>
 
       <div className="grid gap-12 my-2 lg:grid-cols-2">
@@ -160,9 +160,9 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="btn-contact flex gap-3 items-center "
+            className="btn-contact flex gap-3 text-xl items-center"
           >
-            Get in Touch with Our Sales Team
+            Send Message
             <Send className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </form>

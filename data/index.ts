@@ -110,7 +110,7 @@ export const portfolioItems = [
     link: "/",
     complition: "Oct 2025",
     features:['Lift with Power Backup','24x7 Security', 'Parking', 'CCTV' ,'Many More...'],
-    images:['/neptune.png', '/atlantic.png', '/venus.png'],
+    images:['/neptune.png'],
     bed:"2BHK & 3BHK",
     amenities:'4+',
     floor:'G+7',

@@ -22,8 +22,8 @@ const Page = () => {
       {/* Header Section */}
       <div className="flex justify-between items-end ">
         <div>
-          <p className={`${headingFont2.className} text-8xl font-thin`}>Works</p>
-          <h2 className="text-8xl text-nowrap">All Projects</h2>
+          <p className={` text-4xl font-thin`}>Works</p>
+          <h2 className={`${headingFont2.className} text-8xl font-thin`}>All Projects</h2>
         </div>
       </div>
 
@@ -51,12 +51,12 @@ const Page = () => {
                 )}
               </div>
               <div className="bottom-0 left-0 pt-2 text-white">
-                <p className="text-gray-300 text-6xl leading-7 mb-1 font-bold">
+                <p className="text-gray-300 text-4xl md:text-6xl leading-6 my-1 font-bold">
                   {items.title}
                 </p>
 
-                <div className="flex items-center py-1 space-x-2 text-white hover:text-cream transition-colors uppercase">
-                  <span>View Project</span>
+                <div className="flex items-center py-1 space-x-2 text-white group-hover:text-gold transition-colors uppercase">
+                  <span className="text-sm">View Project</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>

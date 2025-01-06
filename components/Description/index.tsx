@@ -25,7 +25,7 @@ export default function index() {
     <div ref={description} className={`${styles.description} text-white`}>
       <div className={styles.body}>
         <h2
-          className={`${headingFont2.className} tracking-normal text-2xl md:text-xl font-thin heading-font`}
+          className={`${headingFont2.className} tracking-normal md:text-[48px] text-[32px] font-thin heading-font`}
           style={{ fontSize: "3.5rem" }}
         >
           {phrase.split(" ").map((word, index) => {
@@ -46,7 +46,7 @@ export default function index() {
         <motion.p
           variants={opacity}
           animate={isInView ? "open" : "closed"}
-          className="tracking-normal text-xs leading-4 text-white md:text-lg font-thin "
+          className="tracking-normal text-lg text-white md:text-lg font-thin "
         >
           For over 20 years, we've mastered the art of crafting impeccable
           lifestyle standards that are both luxurious and sustainable.

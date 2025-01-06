@@ -70,20 +70,6 @@ const index = () => {
               world-class amenities, Arctic offers an elevated lifestyle of
               elegance, comfort, and innovation.
             </p>
-            <div className="my-6">
-              <p className="text-md">
-                Location: <span className="font-thin">Arctic</span>
-              </p>
-              <p className="text-lg">
-                Category: <span className="font-thin">Construction</span>
-              </p>
-              <p className="text-lg">
-                Start Date: <span className="font-thin">12/12/2022</span>
-              </p>
-              <p className="text-lg">
-                End Date: <span className="font-thin">12/12/2023</span>
-              </p>
-            </div>
           </div>
           <div className="flex flex-col items-start justify-between">
             <div className="grid gap-4 grid-cols-2 my-6 text-nowrap">

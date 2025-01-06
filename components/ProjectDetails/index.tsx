@@ -125,7 +125,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </p>
                   </div>
 
-                  <div className="flex gap-2 items-center justify-start">
+                  {/* <div className="flex gap-2 items-center justify-start">
                     <LandPlot />
                     <p className="font-normal md:text-6xl text-4xl">
                       {project.plot}
@@ -133,7 +133,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                     <p className="text-2xl text-center leading-5">
                       Sq. Ft. Plot Size
                     </p>
-                  </div>
+                  </div> */}
 
                   <div className="flex gap-2 items-center justify-start">
                     <Building />
@@ -175,7 +175,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-4">
+                    <h3 className="font-semibold text-gray-900 my-4">
                       Nearby Locations
                     </h3>
                     <div className="flex items-center gap-10">
@@ -205,7 +205,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-4">
+                    <h3 className="font-semibold text-gray-900 my-4">
                       Project Timeline
                     </h3>
                     <div className="space-y-3 text-gray-600">
@@ -220,9 +220,9 @@ export function ProjectDetails({ project }: { project: Property }) {
 
               <div className="md:p-8 mt-[80px] md:mt-0">
                 <div className="flex mb-[100px] flex-col md:flex-row w-full items-center gap-2">
-                  <div className="flex flex-col md:p-2 gap-2">
+                  <div className="flex flex-col gap-2">
                     <h2
-                      className={`${headingFont2.className} text-8xl leading-9 mb-5`}
+                      className={`${headingFont2.className} text-8xl leading-9 mb-1`}
                     >
                       {project.ahead1}
                     </h2>
@@ -240,9 +240,9 @@ export function ProjectDetails({ project }: { project: Property }) {
                     src={project.aimg2}
                     alt=""
                   />
-                  <div className="flex flex-col md:p-2 gap-2">
+                  <div className="flex flex-col gap-2">
                     <h2
-                      className={`${headingFont2.className} text-8xl leading-9 mb-5`}
+                      className={`${headingFont2.className} text-8xl leading-9 mb-1`}
                     >
                       {project.ahead2}
                     </h2>
