@@ -1,6 +1,4 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { slideUp } from "./animation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, ArrowUpRight, PhoneIncomingIcon } from "lucide-react";
