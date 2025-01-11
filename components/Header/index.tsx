@@ -101,7 +101,7 @@ const Header = () => {
                 isMenuOpen ? "text-black" : "text-white"
               } text-sm sm:text-2xl leading-4`}
             >
-              <span className={`${myFont.className} sm:text-4xl text-1xl`}>
+              <span className={`${myFont.className} text-orange-500 sm:text-4xl text-1xl`}>
                 DHUNI{" "}
               </span>
               <br className="sm:hidden" />

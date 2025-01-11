@@ -23,7 +23,7 @@ export default function Footer() {
               height={38}
             />
               <p className="text-lg flex flex-row gap-1 items-baseline">
-                <span className={`${myFont.className} flex flex-col text-4xl`}>
+                <span className={`${myFont.className} text-orange-500 flex flex-col text-4xl`}>
                   DHUNI
                 </span>
                 CONSTRUCTIONS PVT. LTD.

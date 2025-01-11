@@ -57,7 +57,7 @@ const index = () => {
               Upcoming Project
             </p>
             <img
-              className="md:w-[280px] w-[200px] my-2 mix-blend-difference rounded-md"
+              className="md:w-[280px] w-[200px] my-2 rounded-md"
               src="arctic-logo.png"
               alt="failed to load"
             />
