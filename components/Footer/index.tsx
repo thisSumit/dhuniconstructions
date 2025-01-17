@@ -30,7 +30,7 @@ export default function Footer() {
               </p>
             </Link>
             <p className="mb-4 max-w-md text-gray-400">
-            For over 20 years, we have been building homes that embody trust, quality, and excellence. Crafted with superior materials, our projects set impeccable lifestyle standards that blend luxury and sustainability. Experience the future of luxury living with timeless elegance and modern amenities, right in the heart of India. If you're looking for a flat for sale in Nagpur, an apartment in center Nagpur, or an affordable apartment in India, we offer the best flats in Nagpur that redefine comfort and value. Explore your dream apartment at center India and elevate your lifestyle with unmatched quality and design.
+              We build homes that embody trust, quality, and excellence, crafted with superior materials and a commitment to value.
             </p>
             <div className="flex gap-4">
             <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
@@ -95,6 +95,89 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
+<p className="text-gray my-4 px-3 text-xs">Explore BHK Wise Flats for Sale in Nagpur
+
+Discover a diverse range of 1 BHK, 2 BHK, 3 BHK, 4 BHK, and 5 BHK flats for sale in Nagpur. Whether you are a first-time buyer or looking to upgrade, Nagpur offers a variety of options tailored to your needs.
+
+Top Localities in Nagpur
+Find your dream home in some of the most sought-after areas:
+
+Flats in Laxmi Nagar
+Flats in Besa
+Flats in Manish Nagar
+Flats in Koradi Road
+Flats in Wardha Road
+Flats in Jaitala
+Flats in Khapri
+Flats in Jamtha
+Flats in Shankarpur
+Flats in Zingabai Takali
+Top Properties in Nagpur
+Explore various property types available in Nagpur:
+
+Houses for Sale in Nagpur
+Builder Floors in Nagpur
+Resale Flats in Nagpur
+Plots for Sale in Nagpur
+Villas for Sale in Nagpur
+Property in Nagpur
+Low Budget Flats in Nagpur
+Ready to Move Flats in Nagpur
+Penthouses in Nagpur
+Agricultural Land for Sale in Nagpur
+New Projects in Nagpur
+Stay updated with the latest developments:
+
+Godrej Anandam Nagpur
+Kalpataru Launch Code Nagpur
+Waman Nagari
+ANANDAM ELITE
+Mauli Town 21
+Royal Avenue
+Vastu Square 2
+Luxury Properties in Nagpur
+Indulge in luxury living with our selection of:
+
+Luxury Apartments in Nagpur
+Luxury Houses in Nagpur
+Luxury Villas in Nagpur
+Luxury Bungalows in Nagpur
+Affordable Flats in Nagpur
+Find budget-friendly options to suit your financial needs:
+
+Flats in Nagpur under 10 Lakhs
+Flats in Nagpur under 15 Lakhs
+Flats in Nagpur under 20 Lakhs
+Flats in Nagpur under 25 Lakhs
+Flats in Nagpur under 30 Lakhs
+Flats in Nagpur under 35 Lakhs
+Flats in Nagpur under 40 Lakhs
+Flats in Nagpur under 50 Lakhs
+Flats in Nagpur under 60 Lakhs
+Flats in Nagpur under 70 Lakhs
+Flats in Nagpur under 80 Lakhs
+Flats in Nagpur under 90 Lakhs
+Flats in Nagpur in Crore
+Explore premium properties:
+
+Flats in Nagpur under 1 Cr
+Flats in Nagpur under 1.50 Cr
+Flats in Nagpur under 2 Cr
+Flats in Nagpur under 3 Cr
+Flats in Nagpur under 4 Cr
+Flats in Nagpur under 5 Cr
+Flats Near Me
+Looking for something nearby? Check out:
+
+1 BHK Flats for Sale Near Me
+2 BHK Flats for Sale Near Me
+3 BHK Flats for Sale Near Me
+4 BHK Flats for Sale Near Me
+5 BHK Flats for Sale Near Me
+Flats for Sale Near Me
+Ready to Move Flats for Sale Near Me
+Resale Flats for Sale Near Me</p>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-400">
