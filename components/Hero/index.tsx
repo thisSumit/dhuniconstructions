@@ -88,8 +88,8 @@ const Hero = () => {
         >
           <div className="text-center z-1">
             <ul
-              className={`${mainFont.className} md:text-[48px] text-[32px]  text-white uppercase  list-none items-center justify-center flex flex-row
-              gap-5 md:gap-8 tracking-wide`}
+              className={`${mainFont.className} md:text-[48px] text-[28px]  text-white uppercase  list-none items-center justify-center flex flex-row
+              gap-3 md:gap-8 tracking-wide`}
             >
               <li
                 style={{ textShadow: "rgba(255,213,0,0.58) 0px 0px 7px" }}

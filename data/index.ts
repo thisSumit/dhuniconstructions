@@ -42,7 +42,7 @@ export const portfolioItems = [
     title: "Arctic Apartments and Commercials",
     url: 'arctic',
     description: "Discover a lifestyle of luxury and comfort at Arctic Luxurious Apartments, brought to you by Dhuni Constructions Pvt. Ltd. These modern residences feature state-of-the-art architecture, thoughtful layouts, and premium finishes that redefine urban living. Each apartment is designed to maximize natural light and ventilation, providing a serene retreat amidst the city's bustle. Enjoy the perfect blend of sophistication and eco-conscious living with green spaces, energy-efficient systems, and contemporary amenities tailored for your every need.",
-    location: "Plot No. 5, Kh. No. 166, 167, 168, Mauza-Jaitala, Nagpur",
+    location: "Mauza-Jaitala, Nagpur",
     price: "53 Lakhs onwards",
     img: "/arctic.png",
     event: "Flats Available",

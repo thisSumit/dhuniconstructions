@@ -76,7 +76,7 @@ const GridAnimation: React.FC = () => {
   return (
     <section className="image-gallery mt-40 mx-4">
       <div className="px-0 lg:px-[200px] mx-auto flex-col mb-20">
-        <h2 className={`${headingFont2.className} text-white text-8xl tracking-tight`}>
+        <h2 className={`${headingFont2.className} text-white text-8xl leading-9 tracking-tight`}>
           We know the Art Of Luxury
         </h2>
         <p className="text-white font-thin">

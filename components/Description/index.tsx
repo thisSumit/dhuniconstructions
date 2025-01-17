@@ -25,8 +25,8 @@ export default function index() {
     <div ref={description} className={`${styles.description} text-white`}>
       <div className={styles.body}>
         <h2
-          className={`${headingFont2.className} tracking-normal md:text-[48px] text-[32px] font-thin heading-font`}
-          style={{ fontSize: "3.5rem" }}
+          className={`${headingFont2.className} tracking-normal md:text-[40px] text-[20px] font-thin heading-font`}
+          style={{ fontSize: "3rem" }}
         >
           {phrase.split(" ").map((word, index) => {
             return (
