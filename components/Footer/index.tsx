@@ -30,7 +30,7 @@ export default function Footer() {
               </p>
             </Link>
             <p className="mb-4 max-w-md text-gray-400">
-              We build homes that embody trust, quality, and excellence, crafted with superior materials and a commitment to value.
+            For over 20 years, we have been building homes that embody trust, quality, and excellence. Crafted with superior materials, our projects set impeccable lifestyle standards that blend luxury and sustainability. Experience the future of luxury living with timeless elegance and modern amenities, right in the heart of India. If you're looking for a flat for sale in Nagpur, an apartment in center Nagpur, or an affordable apartment in India, we offer the best flats in Nagpur that redefine comfort and value. Explore your dream apartment at center India and elevate your lifestyle with unmatched quality and design.
             </p>
             <div className="flex gap-4">
             <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
