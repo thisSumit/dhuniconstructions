@@ -114,7 +114,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                 <h2 className="text-2xl font-bold text-gray-900">
                   About This Property
                 </h2>
-                <div className="grid border-b pb-5 gap-4 md:grid-cols-2 grid-cols-1 my-4 text-nowrap">
+                <div className="grid pb-5 gap-4 md:grid-cols-2 grid-cols-1 my-4 text-nowrap">
                   <div className="flex gap-2 items-center justify-start">
                     <BedDouble />
                     <p className="font-normal md:text-6xl text-4xl">
@@ -155,6 +155,40 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </p>
                   </div>
                 </div>
+
+                <div className="lg:col-span-1 order-2">
+              <div className="border-l shadow-sm py-2 mb-5 p-8 top-20">
+                <div className="space-y-4">
+                  <button
+                    onClick={() =>
+                      (window.location.href = `https://wa.me/+918830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`)
+                    }
+                    className={`btn-projects w-full bg-blue-600 border text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors`}
+                  >
+                    Download Brochure
+                  </button>
+
+                  <button
+                    onClick={() => (window.location.href = "/contact")}
+                    className={`btn-projects w-full bg-cream text-black border border-blue-600 text-blue-600 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors`}
+                  >
+                    Contact Now
+                  </button>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <h3 className="font-semibold text-gray-900 mb-4">
+                    Contact Information
+                  </h3>
+                  <div className="space-y-3 text-gray-600">
+                    <p>Email: dhuniconstructionspvtltd@gmail.com</p>
+                    <p>Phone: +91 8830256985</p>
+                    <p>Office Hours: 10:00 AM - 8:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            
                 <p className="text-gray-600 mb-6">{project.description}</p>
 
                 <div className="flex flex-col sm:grid sm:grid-cols-2 my-10 gap-6">
@@ -267,38 +301,7 @@ export function ProjectDetails({ project }: { project: Property }) {
               </div>
             </div>
 
-            <div className="lg:col-span-1 order-2">
-              <div className="border-l shadow-sm p-8 sticky top-20">
-                <div className="space-y-4">
-                  <button
-                    onClick={() =>
-                      (window.location.href = `https://wa.me/+918830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`)
-                    }
-                    className={`btn-projects w-full bg-blue-600 border text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors`}
-                  >
-                    Download Brochure
-                  </button>
-
-                  <button
-                    onClick={() => (window.location.href = "/contact")}
-                    className={`btn-projects w-full bg-cream text-black border border-blue-600 text-blue-600 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors`}
-                  >
-                    Contact Now
-                  </button>
-                </div>
-
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <h3 className="font-semibold text-gray-900 mb-4">
-                    Contact Information
-                  </h3>
-                  <div className="space-y-3 text-gray-600">
-                    <p>Email: dhuniconstructionspvtltd@gmail.com</p>
-                    <p>Phone: +91 8830256985</p>
-                    <p>Office Hours: 10:00 AM - 8:00 PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

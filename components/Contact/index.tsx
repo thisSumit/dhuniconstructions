@@ -4,6 +4,7 @@ import { Mail, Phone, Send } from 'lucide-react';
 import localFont from "next/font/local";
 import { portfolioItems } from '@/data';
 import '../Hero/imp.scss'
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const numFont = localFont({
   src: "../../app/fonts/wasted.ttf",
@@ -139,7 +140,7 @@ export default function Contact() {
                 required
               >
                 <option className='text-black' value="">Select a property</option>
-                {Array.isArray(portfolioItems) && portfolioItems.map((item) => (
+                {Array.isArray(portfolioItems) && portfolioItems.slice(0, 4).map((item) => (
                   <option key={item.id} className='text-black' value={item.url}>{item.title}</option>
                 ))}
               </select>
@@ -161,6 +162,9 @@ export default function Contact() {
           <button
             type="submit"
             className="btn-contact flex gap-3 text-xl items-center"
+            onClick={()=>{
+              sendGTMEvent({event: 'contact_form_submit', category: 'contact', action: 'submit', label: 'contact_form_submit'})
+            }}
           >
             Send Message
             <Send className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />

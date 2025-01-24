@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import "./globals.css";
 import Header from "@/components/Header";
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <GoogleTagManager gtmId="AW-577226494" />
       <body className="antialiased box-content ">
 
         <Header />
