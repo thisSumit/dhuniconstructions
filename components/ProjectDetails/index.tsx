@@ -13,6 +13,7 @@ import { useEffect } from "react";
 
 import localFont from "next/font/local";
 import "../../components/Hero/imp.scss";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const headingFont2 = localFont({
   src: "../../app/fonts/new.ttf",
@@ -169,9 +170,9 @@ export function ProjectDetails({ project }: { project: Property }) {
                   </button>
 
                   <button
-                    onClick={() => (window.location.href = "/contact")}
+                    onClick={() => (window.location.href = "tel:+918830256985")}
                     className={`btn-projects w-full bg-cream text-black border border-blue-600 text-blue-600 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors`}
-                  >
+                  > <GoogleTagManager gtmId="AW-577226494" />
                     Contact Now
                   </button>
                 </div>

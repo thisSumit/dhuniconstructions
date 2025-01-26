@@ -30,7 +30,7 @@ export default function Footer() {
               </p>
             </Link>
             <p className="mb-4 max-w-md text-gray-400">
-              We build homes that embody trust, quality, and excellence, crafted with superior materials and a commitment to value.
+            We build homes with Trust, Quality, and Excellence. As the Best Construction and Builder Company in Nagpur, We deliver unmatched Luxury, Quality, and Simplicity in every project.
             </p>
             <div className="flex gap-4">
             <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
