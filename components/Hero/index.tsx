@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 gsap.registerPlugin(ScrollTrigger);
 
 const mainFont = localFont({
-  src: "../../app/fonts/mainFont.otf",
+  src: "../../app/fonts/wasted.ttf",
   weight: "400",
   style: "normal",
 });
@@ -88,24 +88,24 @@ const Hero = () => {
         >
           <div className="text-center z-1">
             <ul
-              className={`${mainFont.className} md:text-[48px] text-[28px]  text-white uppercase  list-none items-center justify-center flex flex-row
-              gap-3 md:gap-8 tracking-wide`}
+              className={`${mainFont.className} md:text-[48px] text-[24px] text-white uppercase list-none items-center justify-center flex flex-row
+              gap-3 md:gap-8 tracking-widest`}
             >
               <li
                 style={{ textShadow: "rgba(255,213,0,0.58) 0px 0px 7px" }}
-                className="list-item font-thin text-white relative "
+                className="list-item text-white relative "
               >
                 Luxury
               </li>
               <li
                 style={{ textShadow: "rgba(255,213,0,0.58) 0px 0px 7px" }}
-                className="list-item font-thin text-white"
+                className="list-item text-white"
               >
                 Quality
               </li>
               <li
                 style={{ textShadow: "rgba(255,213,0,0.58) 0px 0px 7px" }}
-                className="list-item font-thin text-white"
+                className="list-item text-white"
               >
                 Simplicity
               </li>

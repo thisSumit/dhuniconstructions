@@ -181,7 +181,7 @@ Resale Flats for Sale Near Me</p>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © 2024 Dhuni Constructions Pvt. Ltd.. All
+            © 2025 Dhuni Constructions Pvt. Ltd.. All
             rights reserved. Real estate regulations apply.
           </p>
         </div>
