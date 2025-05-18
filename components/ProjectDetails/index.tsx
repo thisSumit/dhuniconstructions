@@ -84,7 +84,7 @@ export function ProjectDetails({ project }: { project: Property }) {
               <Image
                 width={10000}
                 height={10000}
-                src={project.img}
+                src={project.img || ""}
                 alt={project.title}
                 className="object-cover w-full h-full rounded-lg"
               />
@@ -272,8 +272,8 @@ export function ProjectDetails({ project }: { project: Property }) {
                 width={10000}
                 height={10000}
                     className="md:h-[auto] md:w-[25vw]"
-                    src={project.aimg1}
-                    alt=""
+                    src={project.aimg1 || ""}
+                    alt={project.ahead1}
                   />
                 </div>
                 <div className="flex mb-[100px] flex-col md:flex-row w-full items-center gap-2">
@@ -281,8 +281,8 @@ export function ProjectDetails({ project }: { project: Property }) {
                 width={10000}
                 height={10000}
                     className="md:h-[auto] md:w-[25vw] mb-5"
-                    src={project.aimg2}
-                    alt=""
+                    src={project.aimg2 || ""}
+                    alt={project.ahead2}
                   />
                   <div className="flex flex-col gap-2">
                     <h2

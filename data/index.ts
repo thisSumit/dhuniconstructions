@@ -91,7 +91,7 @@ export const portfolioItems = [
     apara2:'Step into a world where luxury and ambition meet.',
     ahead1:'Strength in Design, Sparkle in Every Detail',
     apara1:'Luxury crafted for those who aim higher.',
-    aimg1:'/atlantic6.png ',
+    aimg1:'/atlantic6.png',
     aimg2:'/4.jpg',
     aimg3:'https://images.unsplash.com/photo-1623944431758-e856760d7b65?q=80&w=1992&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.5411531458544!2d79.02205509052281!3d21.111204899030255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf00697fd375%3A0xbddcaf763a5870c9!2sAtlantic%20appointment!5e1!3m2!1sen!2sin!4v1731958927755!5m2!1sen!2sin"
