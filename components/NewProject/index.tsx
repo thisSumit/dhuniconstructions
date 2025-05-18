@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight, ArrowUpRight, PhoneIncomingIcon } from "lucide-react";
+import Image from "next/image";
 import localFont from "next/font/local";
 import "../Hero/imp.scss";
 gsap.registerPlugin(ScrollTrigger);
@@ -56,10 +57,12 @@ const index = () => {
             >
               Upcoming Project
             </p>
-            <img
+            <Image
+              width={1000}
+              height={1000}
               className="md:w-[280px] w-[200px] my-2 rounded-md"
-              src="arctic-logo.png"
-              alt="failed to load"
+              src="/arctic-logo.png"
+              alt="arctic apartments"
             />
 
             <p className="max-w-3xl font-thin text-md leading-normal">
@@ -128,10 +131,12 @@ const index = () => {
           </div>
         </div>
         <div className="flex md:order-2 sm:items-center sm:justify-center order-first mb-10">
-          <img
+          <Image
+          width={10000}
+            height={10000}
             className="w-full h-auto sm:w-[300px] lg:w-[80%] lg:h-full rounded-md"
-            src="arctic.png"
-            alt="Arctic Project"
+            src="/arctic.png"
+            alt="Arctic Apartment Project Dhuni Constructions"
           />
         </div>
       </div>

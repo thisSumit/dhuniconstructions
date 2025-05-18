@@ -20,8 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-    <GoogleTagManager gtmId="AW-577226494" />
+    <html lang="en">
       <body className="antialiased box-content ">
 
         <Header />

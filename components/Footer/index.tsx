@@ -2,15 +2,19 @@ import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 import localFont from "next/font/local";
 import Link from "next/link";
-const myFont = localFont({ src: "../ui/MyFont.ttf", weight: "400" });
+const myFont = localFont({
+  src: "../ui/MyFont.ttf",
+  weight: "400",
+  style: "normal",
+});
 import Image from "next/image";
-import dhuniLogo from '../../public/logo w-org.svg'
+import dhuniLogo from '../../public/logo.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-blue text-white md:px-[200px]">
+    <footer className="bg-blue text-white lg:px-[150px] w-full">
       <div className="py-12 mx-2">
-        <div className="grid gap-8 items-center justify-center lg:grid-cols-4">
+        <div className="grid w-full gap-8 items-center justify-center lg:grid-cols-4">
           <div className="lg:col-span-2 md:px-6">
             <Link
               href="/"
@@ -19,11 +23,11 @@ export default function Footer() {
               <Image
               src={dhuniLogo}
               alt="Company Logo"
-              width={38}
-              height={38}
+              width={30}
+              height={30}
             />
               <p className="text-lg flex flex-row gap-1 items-baseline">
-                <span className={`${myFont.className} text-orange-500 flex flex-col text-4xl`}>
+                <span className={`${myFont.className} flex flex-col`}>
                   DHUNI
                 </span>
                 CONSTRUCTIONS PVT. LTD.

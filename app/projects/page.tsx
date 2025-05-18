@@ -4,6 +4,7 @@ import React from "react";
 import { portfolioItems } from "@/data";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import "../../components/Hero/imp.scss";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
@@ -43,7 +44,9 @@ const Page = () => {
               {/* Image Container */}
               <div>
                 {items.img && (
-                  <img
+                  <Image
+                    width={10000}
+                    height={10000}
                     src={items.img} 
                     alt={items.title || "Project Image"}
                     className="lg:h-[550px] md:h-[400px] sm:h-[200] relative w-full object-cover"

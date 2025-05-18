@@ -10,6 +10,7 @@ import {
   Earth,
 } from "lucide-react";
 import { useEffect } from "react";
+import Image from "next/image";
 
 import localFont from "next/font/local";
 import "../../components/Hero/imp.scss";
@@ -80,7 +81,9 @@ export function ProjectDetails({ project }: { project: Property }) {
           {/* Image Gallery */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="w-full h-full">
-              <img
+              <Image
+                width={10000}
+                height={10000}
                 src={project.img}
                 alt={project.title}
                 className="object-cover w-full h-full rounded-lg"
@@ -89,7 +92,9 @@ export function ProjectDetails({ project }: { project: Property }) {
             <div className="grid grid-cols-2 gap-4">
               {project.images.map((image, index) => (
                 <div key={index} className="aspect-w-1 aspect-h-1">
-                  <img
+                  <Image
+                width={10000}
+                height={10000}
                     src={image}
                     alt={`${project.title} - Image ${index + 1}`}
                     className="object-cover w-full h-full rounded-lg"
@@ -263,14 +268,18 @@ export function ProjectDetails({ project }: { project: Property }) {
                     </h2>
                     <p className="font-thin">{project.apara1}</p>
                   </div>
-                  <img
+                  <Image
+                width={10000}
+                height={10000}
                     className="md:h-[auto] md:w-[25vw]"
                     src={project.aimg1}
                     alt=""
                   />
                 </div>
                 <div className="flex mb-[100px] flex-col md:flex-row w-full items-center gap-2">
-                  <img
+                  <Image
+                width={10000}
+                height={10000}
                     className="md:h-[auto] md:w-[25vw] mb-5"
                     src={project.aimg2}
                     alt=""

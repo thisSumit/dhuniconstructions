@@ -10,6 +10,8 @@ body {
   background-color: #001722;
   font-family: 'Inter', sans-serif;
   letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 @layer utilities {

@@ -101,11 +101,11 @@ const Page = () => {
           </h2>
           <hr />
           <div className="note flex flex-col xl:flex-row justify-between gap-10 mt-32 items-center">
-            <Image
+            {/* <Image
               src={founders}
               alt="founders"
               className="w-[90vw] md:w-[50vw] xl:w-[30vw] rounded-md"
-            />
+            /> */}
             <div className="">
               <ImQuotesLeft className="text-cream text-10xl" />
               <p
@@ -135,9 +135,11 @@ const Page = () => {
           <div className="overflow-hidden mt-10">
             <div ref={row1Ref} className="flex space-x-4 lg:space-x-8 items-center">
               {imageUrls.slice(0, 8).map((url, index) => (
-                <img
+                <Image
                   key={index}
                   src={url}
+                  width={100}
+                  height={100}
                   alt="Image"
                   className="w-[100px] h-[auto] sm:w-80 sm:h-80 object-cover rounded-lg"
                 />
@@ -145,7 +147,9 @@ const Page = () => {
             </div>
             <div ref={row2Ref} className="flex space-x-4 lg:space-x-8 items-center mt-8">
               {imageUrls.slice(10).map((url, index) => (
-                <img
+                <Image
+                width={100}
+                  height={100}
                   key={index}
                   src={url}
                   alt="Image"
@@ -185,51 +189,48 @@ const Page = () => {
 
           <div className="flex flex-col xl:flex-row gap-10 mt-20 mb-20 md:mt-32 md:mb-32 items-start">
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">
-              <img
-                className="w-[80px] h-auto mb-4"
-                src="/Satisfaction.png"
-                alt="customer satisfaction"
+              <Image
+              width={100}
+                  height={100}
+                className="w-[50px] h-auto mb-4"
+                src="/luxury.png"
+                alt="luxury"
               />
-              <h3 className="text-white font-normal text-6xl mb-4">
-                Customer Satisfaction
+              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+                Luxury
               </h3>
-              <p className="text-white text-lg font-thin text-justify">
-                At Dhuni Constructions, we prioritize understanding our clients'
-                needs and delivering beyond expectations. Every project reflects
-                our commitment to creating spaces that bring joy and comfort.
-                Your satisfaction is the cornerstone of our success.
+              <p className="text-white text-lg font-thin">
+                We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, and premium finishes — perfect for modern families seeking upscale living.
               </p>
             </div>
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">
-              <img
-                className="w-[80px] h-auto mb-4"
-                src="/Guarantee.png"
-                alt="customer satisfaction"
+              <Image
+              width={100}
+                  height={100}
+                className="w-[50px] h-auto mb-4"
+                src="/quality.png"
+                alt="quality"
               />
-              <h3 className="text-white font-normal text-6xl mb-4">
-                Quality Excellence
+              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+                Quality
               </h3>
-              <p className="text-white text-lg font-thin text-justify">
-                We are dedicated to delivering superior quality in every
-                project. From top-notch materials to meticulous craftsmanship,
-                we ensure every detail speaks of perfection. Our focus on
-                excellence guarantees lasting value and beauty.
+              <p className="text-white text-lg font-thin">
+                Each home is constructed using top-grade materials and skilled workmanship, ensuring durability, safety, and long-term value.
               </p>
             </div>
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">
-              <img
-                className="w-[80px] h-auto mb-4"
-                src="/Trust.png"
-                alt="customer satisfaction"
+              <Image
+              width={100}
+                  height={100}
+                className="w-[50px] h-auto mb-4"
+                src="/simplicity.png"
+                alt="simplicity"
               />
-              <h3 className="text-white font-normal text-6xl mb-4">
-                Trust and Relationships
+              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+                Simplicity
               </h3>
-              <p className="text-white text-lg font-thin text-justify">
-                Building strong, lasting relationships is at the heart of what
-                we do. Through transparency, reliability, and personalized
-                service, we have earned the trust of our clients. For us, every
-                project is a journey together.
+              <p className="text-white text-lg font-thin">
+               Our homes feature minimal, intelligent designs that offer comfort, easy maintenance, and efficient everyday living.
               </p>
             </div>
           </div>

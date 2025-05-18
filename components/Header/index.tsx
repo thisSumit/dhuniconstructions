@@ -4,7 +4,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import dhuniLogo from "../../public/logo w-org.svg";
+import dhuniLogo from "../../public/logo.png";
+import dhuniLogoB from "../../public/logob.png";
 import { navItems } from "@/data";
 import localFont from "next/font/local";
 import { gsap } from "gsap";
@@ -95,13 +96,13 @@ const Header = () => {
       >
         <div className="py-4 px-4 md:px-6 flex justify-between items-end w-full">
           <Link href="/" className="flex sm:items-baseline capitalize gap-2">
-            <Image src={dhuniLogo} alt="Dhuni Constructions Logo" width={38} height={38} />
+            <Image src={isMenuOpen ? dhuniLogoB : dhuniLogo} alt="Dhuni Constructions Pvt. Ltd." className="object-contain" width={30} height={30} />
             <p
               className={`${
                 isMenuOpen ? "text-black" : "text-white"
               } text-sm sm:text-2xl leading-4`}
             >
-              <span className={`${myFont.className} text-orange-500 sm:text-4xl text-1xl`}>
+              <span className={`${myFont.className} text-1xl`}>
                 DHUNI{" "}
               </span>
               <br className="sm:hidden" />

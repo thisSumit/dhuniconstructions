@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import localFont from "next/font/local";
-
+import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 const headingFont2 = localFont({
@@ -86,7 +86,9 @@ const GridAnimation: React.FC = () => {
       <div className="overflow-hidden">
         <div ref={row1Ref} className="flex space-x-4 lg:space-x-8 items-center">
           {imageUrls.slice(0, 12).map((url, index) => (
-            <img
+            <Image
+            width={1000}
+                    height={1000}
               key={index}
               src={url}
               alt="Image"
@@ -96,7 +98,9 @@ const GridAnimation: React.FC = () => {
         </div>
         <div ref={row2Ref} className="flex space-x-4 lg:space-x-8 items-center mt-8">
           {imageUrls.slice(12).map((url, index) => (
-            <img
+            <Image
+            width={1000}
+                    height={1000}
               key={index}
               src={url}
               alt="Image"
