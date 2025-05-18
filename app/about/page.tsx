@@ -86,8 +86,8 @@ const Page = () => {
   }, []);
 
   return (
-    <main className="relative w-full h-auto overflow-hidden mx-auto">
-      <div className="main-container hero-about w-[80vw] h-auto mx-auto pt-20 relative">
+    <main className="relative w-full h-auto overflow-hidden">
+      <div className="main-container hero-about w-[90vw] mx-auto h-auto pt-20 relative">
         <section className="note mt-10 founders-note">
           <h2
             className={`${headingFont2.className} text-white text-8xl`}
@@ -148,8 +148,8 @@ const Page = () => {
             <div ref={row2Ref} className="flex space-x-4 lg:space-x-8 items-center mt-8">
               {imageUrls.slice(10).map((url, index) => (
                 <Image
-                width={100}
-                  height={100}
+                width={1000}
+                  height={1000}
                   key={index}
                   src={url}
                   alt="Image"
@@ -161,16 +161,7 @@ const Page = () => {
 
           <div className="about-content flex flex-col-reverse xl:flex-row gap-2">
             <p className="font-thin text-justify text-lg">
-              Dhuni Constructions Pvt. Ltd., founded in 2012 by Amit Tarekar and
-              Swapnil Gode, is a trusted name in the construction industry.
-              Guided by a passion for exceptional architecture, we deliver
-              projects that blend luxury, simplicity, and quality craftsmanship.
-              We believe great architecture enhances lives, combining timeless
-              design with functionality. From residential to commercial spaces,
-              our focus is on creating lasting impressions and exceeding client
-              expectations. At Dhuni, customer satisfaction is our priority, and
-              we take pride in transforming visions into reality with excellence
-              at every step.
+              Dhuni Constructions Pvt. Ltd., established in 2012 by Amit Tarekar and Swapnil Gode, is a premier construction company based in Nagpur. We specialize in crafting residential and commercial spaces that epitomize luxury, quality, and simplicity. Our commitment to exceptional architecture and meticulous craftsmanship ensures that each project enhances lives through timeless design and functionality. With a focus on customer satisfaction, we transform visions into reality, delivering excellence at every step.
             </p>
           </div>
         </div>
@@ -200,7 +191,7 @@ const Page = () => {
                 Luxury
               </h3>
               <p className="text-white text-lg font-thin">
-                We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, and premium finishes — perfect for modern families seeking upscale living.
+                We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, and premium finishes perfect for modern families seeking upscale living.
               </p>
             </div>
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">

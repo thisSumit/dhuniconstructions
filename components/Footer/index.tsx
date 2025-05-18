@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="lg:col-span-2 md:px-6">
             <Link
               href="/"
-              className="menu-logo mr-2 flex items-baseline capitalize gap-2 mb-4"
+              className="menu-logo mr-2 text-nowrap flex items-baseline capitalize gap-2 mb-4"
             >
               <Image
               src={dhuniLogo}
@@ -26,7 +26,7 @@ export default function Footer() {
               width={30}
               height={30}
             />
-              <p className="text-lg flex flex-row gap-1 items-baseline">
+              <p className="flex flex-row gap-1 items-baseline">
                 <span className={`${myFont.className} flex flex-col`}>
                   DHUNI
                 </span>
