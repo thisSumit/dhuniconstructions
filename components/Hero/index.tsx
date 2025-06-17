@@ -61,19 +61,18 @@ const Hero = () => {
     >
       {/* Video Background with Cache-Busting Query */}
       <video
-        ref={videoRef}
-        autoPlay
-        loop
-        preload="auto"
-        muted={isMuted}
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover scale-105"
-      >
-        <source
-          src={`/introvideo.mp4`} // Prevent caching issues
-          type="video/mp4"
-        />
-      </video>
+  ref={videoRef}
+  autoPlay
+  loop
+  preload="none"
+  poster="/introvideo-poster.jpg"
+  muted={isMuted}
+  playsInline
+  className="absolute inset-0 h-full w-full object-cover scale-105"
+>
+  <source src="/introvideo.webm" type="video/webm" />
+  <source src="/introvideo.mp4" type="video/mp4" />
+</video>
 
       {/* Gradient Overlay with Parallax */}
       <div
