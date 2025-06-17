@@ -19,6 +19,8 @@ const Header = () => {
   const [isBlurred, setIsBlurred] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolledPastHalf, setIsScrolledPastHalf] = useState(false);
+
   const container = useRef<HTMLDivElement>(null);
   const menuOverlayRef = useRef<HTMLDivElement>(null);
   const menuItemsRef = useRef<HTMLDivElement>(null);
@@ -30,8 +32,10 @@ const Header = () => {
     const handleScroll = () => {
       const heroHeight = document.querySelector(".hero-section")?.clientHeight || 0;
       const scrollPosition = window.scrollY;
+      const halfViewport = window.innerHeight / 2;
 
       setIsBlurred(scrollPosition > heroHeight);
+      setIsScrolledPastHalf(scrollPosition > halfViewport);
 
       if (scrollPosition > lastScrollY) {
         setHidden(true);
@@ -91,16 +95,22 @@ const Header = () => {
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className={`w-screen top-0 left-0 flex flex-col fixed justify-between items-center z-30 ${
-          isBlurred ? "backdrop-blur-lg bg-gray-800/50" : "bg-transparent"
+          isScrolledPastHalf ? "backdrop-blur-lg bg-white/60 border-neutral-200 border-b-[1px]" : "bg-transparent"
         }`}
       >
         <div className="py-4 px-4 md:px-6 flex justify-between items-end w-full">
           <Link href="/" className="flex sm:items-baseline capitalize gap-2">
-            <Image src={isMenuOpen ? dhuniLogoB : dhuniLogo} alt="Dhuni Constructions Pvt. Ltd." className="object-contain" width={30} height={30} />
+            <Image
+              src={isMenuOpen || isScrolledPastHalf ? dhuniLogoB : dhuniLogo}
+              alt="Dhuni Constructions Pvt. Ltd."
+              className="object-contain"
+              width={30}
+              height={30}
+            />
             <p
               className={`${
-                isMenuOpen ? "text-black" : "text-white"
-              } text-sm sm:text-2xl leading-4`}
+                isMenuOpen || isScrolledPastHalf ? "text-black" : "text-white"
+              } text-sm sm:text-xl leading-4`}
             >
               <span className={`${myFont.className} text-1xl`}>
                 DHUNI{" "}
@@ -110,9 +120,15 @@ const Header = () => {
             </p>
           </Link>
 
-          <div className="hidden md:flex flex-row justify-between gap-10 px-5 cursor-pointer">
+          <div className="hidden md:flex flex-row uppercase justify-between gap-10 px-5 cursor-pointer">
             {navItems.map((item, index) => (
-              <Link key={index} href={item.path} className="text-white hover:text-cream">
+              <Link
+                key={index}
+                href={item.path}
+                className={`hover:text-gold transition duration-300 ${
+                  isScrolledPastHalf ? "text-black" : "text-white"
+                }`}
+              >
                 {item.label}
               </Link>
             ))}
@@ -122,7 +138,7 @@ const Header = () => {
             onClick={toggleMenu}
             aria-label="Toggle menu"
             className={`transition text-sm sm:text-md px-3 cursor-pointer font-normal md:hidden ${
-              isMenuOpen ? "text-black" : "text-white"
+              isMenuOpen || isScrolledPastHalf ? "text-black" : "text-white"
             }`}
           >
             {isMenuOpen ? "Close" : "Menu"}

@@ -8,11 +8,11 @@ const myFont = localFont({
   style: "normal",
 });
 import Image from "next/image";
-import dhuniLogo from '../../public/logo.png'
+import dhuniLogo from '../../public/logob.png'
 
 export default function Footer() {
   return (
-    <footer className="bg-blue text-white lg:px-[150px] w-full">
+    <footer className="text-black lg:px-[150px] w-full">
       <div className="py-12 mx-2">
         <div className="grid w-full gap-8 items-center justify-center lg:grid-cols-4">
           <div className="lg:col-span-2 md:px-6">
@@ -37,16 +37,16 @@ export default function Footer() {
             We build homes with Trust, Quality, and Excellence. As the Best Construction and Builder Company in Nagpur, We deliver unmatched Luxury, Quality, and Simplicity in every project.
             </p>
             <div className="flex gap-4">
-            <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+            <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-gold">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="https://www.instagram.com/dhuniconstructions/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+              <a href="https://www.instagram.com/dhuniconstructions/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-gold">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="https://www.linkedin.com/company/dhuni-constructions-pvt-ltd/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+              <a href="https://www.linkedin.com/company/dhuni-constructions-pvt-ltd/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-gold">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://www.youtube.com/@DhuniConstructionsPvt.Ltd." className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-orange-500">
+              <a href="https://www.youtube.com/@DhuniConstructionsPvt.Ltd." className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-gold">
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
@@ -56,22 +56,22 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">Quick Links</h4>
             <ul className="space-y-2">
             <li>
-                <a href="/" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/about" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/projects" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/projects" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/contact" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Contact Us
                 </a>
               </li>
@@ -82,17 +82,17 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">Legal</h4>
             <ul className="space-y-2">
             <li>
-                <a href="/legal/privacy" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/privacy" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/legal/term" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/term" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="/legal/disclaimer" className="text-gray-400 transition-colors duration-300 hover:text-orange-500">
+                <a href="/legal/disclaimer" className="text-gray-400 transition-colors duration-300 hover:text-gold">
                   Disclaimer
                 </a>
               </li>

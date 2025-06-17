@@ -14,17 +14,24 @@ const headingFont2 = localFont({
   weight: "400",
   style: "normal",
 });
+const numFont = localFont({
+  src: "../../app/fonts/wasted.ttf",
+  weight: "400",
+  style: "normal",
+});
 const Page = () => {
   return (
+    <div>
+    <div className="bg-blue w-full h-[60px]">
+      </div>
     <div
-      className="w-full px-2 my-[150px] lg:px-20 text-white"
-
+      className="w-full px-2 my-[50px] lg:px-20"
     >
       {/* Header Section */}
       <div className="flex justify-between items-end ">
         <div>
-          <p className={` text-4xl font-thin`}>Works</p>
-          <h2 className={`${headingFont2.className} text-8xl font-thin`}>All Projects</h2>
+          <p className={`text-black text-4xl font-thin`}>Works</p>
+          <h2 className={`${numFont.className} text-8xl font-thin uppercase tracking-widest text-black`}>All Projects</h2>
         </div>
       </div>
 
@@ -38,27 +45,35 @@ const Page = () => {
           >
             <motion.div
               className="w-full group my-3 relative overflow-hidden rounded-md"
-              whileHover={{ scale: 0.98 }} 
-              transition={{ duration: 0.3 }} 
+              initial={{ opacity: 0, scale: 1 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }} 
             >
               {/* Image Container */}
-              <div>
-                {items.img && (
-                  <Image
-                    width={10000}
-                    height={10000}
-                    src={items.img} 
-                    alt={items.title || "Project Image"}
-                    className="lg:h-[550px] md:h-[400px] sm:h-[200] relative w-full object-cover"
-                  />
-                )}
-              </div>
-              <div className="bottom-0 left-0 pt-2 text-white">
-                <p className="text-gray-300 text-4xl md:text-6xl leading-6 my-1 font-bold">
+              <div className="overflow-hidden relative group">
+  {items.img && (
+    <motion.div
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="w-full h-full"
+    >
+      <Image
+        width={10000}
+        height={10000}
+        src={items.img}
+        alt={items.title || "Project Image"}
+        className="lg:h-[550px] md:h-[400px] sm:h-[200px] w-full lg:object-cover object-contain transition-transform duration-500"
+      />
+    </motion.div>
+  )}
+</div>
+              <div className="bottom-0 left-0 pt-2 text-black">
+                <p className="text-gray-300 uppercase text-4xl md:text-6xl leading-6 my-1">
                   {items.title}
                 </p>
 
-                <div className="flex items-center py-1 space-x-2 text-white group-hover:text-gold transition-colors uppercase">
+                <div className="flex items-center py-1 space-x-2 text-black group-hover:text-gold transition-colors uppercase">
                   <span className="text-sm">View Project</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
@@ -67,6 +82,7 @@ const Page = () => {
           </Link>
         ))}
       </div>
+    </div>
     </div>
   );
 };

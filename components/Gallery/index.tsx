@@ -12,6 +12,11 @@ const headingFont2 = localFont({
   weight: "400",
   style: "normal",
 });
+const numFont = localFont({
+  src: "../../app/fonts/wasted.ttf",
+  weight: "400",
+  style: "normal",
+});
 
 const imageUrls = [
   "/1.jpg",
@@ -76,10 +81,10 @@ const GridAnimation: React.FC = () => {
   return (
     <section className="image-gallery mt-40 mx-4">
       <div className="px-0 lg:px-[200px] mx-auto flex-col mb-20">
-        <h2 className={`${headingFont2.className} text-white text-8xl leading-9 tracking-tight`}>
+        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl leading-9`}>
           We know the Art Of Luxury
         </h2>
-        <p className="text-white font-thin">
+        <p className="text-black font-thin">
           Experience the pinnacle of craftsmanship and design through our curated gallery, where every project reflects unparalleled elegance and timeless sophistication.
         </p>
       </div>

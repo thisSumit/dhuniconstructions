@@ -55,17 +55,17 @@ export default function Contact() {
   };
 
   return (
-    <div id='contact' className="bg-blue text-white py-[100px] p-3 md:px-[200px]">
+    <div id='contact' className="text-black py-[100px] p-3 md:px-[200px]">
       <div>
         <p className='text-lg font-thin'>Get in Touch</p>
-        <h2 className={`${headingFont2.className} text-8xl`}>Contact Us</h2>
+        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl`}>Contact Us</h2>
       </div>
 
       <div className="grid gap-12 my-2 lg:grid-cols-2">
         <div>
           <div className="space-y-6">
             <a href='tel:8830256985' className="flex items-center gap-4 hover:cursor-pointer">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream hover:bg-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream hover:bg-black">
                 <Phone className="h-6 w-6 text-blue" />
               </div>
               <div>
@@ -74,7 +74,7 @@ export default function Contact() {
               </div>
             </a>
             <a href='mailto:dhuniconstructionspvtltd@gmail.com' className="flex items-center gap-4 hover:cursor-pointer">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream hover:bg-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream hover:bg-black">
                 <Mail className="h-6 w-6 text-blue " />
               </div>
               <div>
@@ -85,7 +85,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form method='post' onSubmit={handleSubmit} className="text-white space-y-6">
+        <form method='post' onSubmit={handleSubmit} className="text-black space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -96,7 +96,7 @@ export default function Contact() {
                 id="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
+                className="mt-1 w-full p-2 border-b-2 bg-transparent border-black focus:outline-none"
                 required
               />
             </div>
@@ -109,7 +109,7 @@ export default function Contact() {
                 id="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
+                className="mt-1 w-full p-2 border-b-2 bg-transparent border-black focus:outline-none"
                 required
               />
             </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                 id="phone"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
+                className="mt-1 w-full p-2 border-b-2 bg-transparent border-black focus:outline-none"
                 required
               />
             </div>
@@ -136,7 +136,7 @@ export default function Contact() {
                 id="property"
                 value={formData.property}
                 onChange={(e) => setFormData({ ...formData, property: e.target.value })}
-                className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
+                className="mt-1 w-full p-2 border-b-2 bg-transparent border-black focus:outline-none"
                 required
               >
                 <option className='text-black' value="">Select a property</option>
@@ -155,7 +155,7 @@ export default function Contact() {
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               rows={4}
-              className="mt-1 w-full p-2 border-b-2 bg-transparent border-white focus:outline-none"
+              className="mt-1 w-full p-2 border-b-2 bg-transparent border-black focus:outline-none"
               required
             />
           </div>
@@ -167,7 +167,7 @@ export default function Contact() {
             }}
           >
             Send Message
-            <Send className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <Send className="arrow rotate-45 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </form>
       </div>

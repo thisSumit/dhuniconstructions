@@ -10,6 +10,11 @@ const headingFont2 = localFont({
   weight: "400",
   style: "normal",
 });
+const numFont = localFont({
+  src: "../../app/fonts/wasted.ttf",
+  weight: "400",
+  style: "normal",
+});
 
 const Hero = () => {
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
@@ -41,13 +46,13 @@ const Hero = () => {
   return (
     <div className="pt-[200px] px-4 w-full h-full">
       {/* Heading */}
-      <div className="w-full flex items-baseline gap-3 mb-4 justify-center text-white">
+      <div className="w-full md:flex items-center md:items-baseline gap-3 mb-4 justify-center text-black">
         <p
-          className={`${headingFont2.className} text-8xl font-normal tracking-normal`}
+          className={`${numFont.className} uppercase tracking-widest text-8xl font-normal`}
         >
           Inspirational
         </p>
-        <h2 className={`${headingFont2.className} text-8xl tracking-normal`}>
+        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl`}>
           Lifestyle
         </h2>
       </div>
@@ -75,7 +80,7 @@ const Hero = () => {
               {/* Mute/Unmute Button */}
               <div
                 onClick={() => toggleMute(index)}
-                className="absolute bottom-5 right-5 flex items-center justify-center w-[50px] h-[50px] rounded-full bg-white text-black shadow-md cursor-pointer"
+                className="absolute bottom-5 right-5 flex items-center justify-center w-[50px] h-[50px] rounded-full bg-black text-white shadow-md cursor-pointer"
               >
                 {isMutedArray[index] ? (
                   <VolumeX className="h-6 w-6" />

@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <div id='contact' className="bg-blue text-black py-[100px] p-3 md:p-24">
+    <div id='contact' className="bg-blue text-black py-[30px] p-3">
       </div>
   );
 }

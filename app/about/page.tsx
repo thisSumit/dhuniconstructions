@@ -11,7 +11,11 @@ import { ImQuotesLeft } from "react-icons/im";
 import founders from "../../public/founders.png";
 
 gsap.registerPlugin(ScrollTrigger);
-
+const numFont = localFont({
+  src: "../../app/fonts/wasted.ttf",
+  weight: "400",
+  style: "normal",
+});
 const headingFont2 = localFont({
   src: "../../app/fonts/new.ttf",
   weight: "400",
@@ -87,10 +91,13 @@ const Page = () => {
 
   return (
     <main className="relative w-full h-auto overflow-hidden">
+      <div>
+    <div className="bg-blue w-full h-[60px]">
+      </div>
       <div className="main-container hero-about w-[90vw] mx-auto h-auto pt-20 relative">
         <section className="note mt-10 founders-note">
           <h2
-            className={`${headingFont2.className} text-white text-8xl`}
+            className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);
@@ -109,20 +116,20 @@ const Page = () => {
             <div className="">
               <ImQuotesLeft className="text-cream text-10xl" />
               <p
-                className={`${headingFont2.className} text-8xl md:text-10xl text-white leading-snug`}
+                className={`${numFont.className} text-8xl font-thin uppercase tracking-widest md:text-10xl text-black leading-snug`}
               >
                 Great architecture isn’t just built; it’s felt, lived, and
                 remembered forever.
               </p>
-              <p className="italic text-white font-thin">
-                - Amit Tarekar & Swapnil Gode
+              <p className="italic text-black font-thin">
+                Directors- Mr. Amit Tarekar & Mr. Swapnil Gode
               </p>
             </div>
           </div>
         </section>
-        <div className="dhuni-desc mt-20 w-full bg-blue text-white rounded-md">
+        <div className="dhuni-desc mt-20 w-full text-black rounded-md">
           <h2
-            className={`${headingFont2.className} text-8xl`}
+            className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);
@@ -138,8 +145,8 @@ const Page = () => {
                 <Image
                   key={index}
                   src={url}
-                  width={100}
-                  height={100}
+                  width={1000}
+                  height={1000}
                   alt="Image"
                   className="w-[100px] h-[auto] sm:w-80 sm:h-80 object-cover rounded-lg"
                 />
@@ -167,7 +174,7 @@ const Page = () => {
         </div>
         <section className="values">
           <h2
-            className={`${headingFont2.className} text-white text-8xl mt-20`}
+            className={`${headingFont2.className} text-black text-8xl mt-20`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);
@@ -187,10 +194,10 @@ const Page = () => {
                 src="/luxury.png"
                 alt="luxury"
               />
-              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
                 Luxury
               </h3>
-              <p className="text-white text-lg font-thin">
+              <p className="text-black text-lg font-thin">
                 We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, and premium finishes perfect for modern families seeking upscale living.
               </p>
             </div>
@@ -202,10 +209,10 @@ const Page = () => {
                 src="/quality.png"
                 alt="quality"
               />
-              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
                 Quality
               </h3>
-              <p className="text-white text-lg font-thin">
+              <p className="text-black text-lg font-thin">
                 Each home is constructed using top-grade materials and skilled workmanship, ensuring durability, safety, and long-term value.
               </p>
             </div>
@@ -217,15 +224,16 @@ const Page = () => {
                 src="/simplicity.png"
                 alt="simplicity"
               />
-              <h3 className="text-white font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
                 Simplicity
               </h3>
-              <p className="text-white text-lg font-thin">
+              <p className="text-black text-lg font-thin">
                Our homes feature minimal, intelligent designs that offer comfort, easy maintenance, and efficient everyday living.
               </p>
             </div>
           </div>
         </section>
+      </div>
       </div>
     </main>
   );

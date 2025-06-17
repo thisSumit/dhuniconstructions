@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className="container mx-auto text-white px-4 my-[150px] py-10">
+    <main className="container mx-auto text-black px-4 my-[150px] py-10">
         <section className="mb-8">
             <h2 className="text-8xl font-semibold mb-4">Term of Service</h2>
             <p className="text-gray-700">
@@ -44,7 +44,7 @@ const page = () => {
                 These terms are governed by the laws of India. Disputes will be handled under the jurisdiction of Nagpur courts.
             </p>
         </section>
-        <footer className="bg-gray-900 text-white py-6">
+        <footer className="bg-gray-900 text-black py-6">
         <div className="container mx-auto text-center">
             <p className="text-sm">© 2024 Dhuni Constructions Pvt. Ltd. All Rights Reserved.</p>
         </div>

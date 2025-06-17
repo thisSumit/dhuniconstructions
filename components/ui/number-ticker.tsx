@@ -14,7 +14,7 @@ export default function NumberTicker({
 }: {
   value: number;
   direction?: "up" | "down";
-  className?: 'white';
+  className?: 'black';
   delay?: number; // delay in s
   decimalPlaces?: number;
 }) {
@@ -49,7 +49,7 @@ export default function NumberTicker({
   return (
     <span
       className={cn(
-        "inline-block tabular-nums text-white dark:text-black tracking-wider",
+        "inline-block tabular-nums text-black dark:text-black tracking-wider",
         className,
       )}
       ref={ref}

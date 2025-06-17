@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className="container text-white mx-auto px-4 py-10 my-[150px]">
+    <main className="container text-black mx-auto px-4 py-10 my-[150px]">
         <section className="mb-10">
             <h2 className="text-8xl font-semibold mb-4">Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
@@ -54,7 +54,7 @@ const page = () => {
                 We use cookies to enhance your browsing experience. You can manage cookie preferences through your browser settings.
             </p>
         </section>
-        <footer className="bg-gray-900 text-white py-6">
+        <footer className="bg-gray-900 text-black py-6">
         <div className="container mx-auto text-center">
             <p className="text-sm">© 2024 Dhuni Constructions Pvt. Ltd. All Rights Reserved.</p>
         </div>

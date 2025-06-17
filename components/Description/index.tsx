@@ -22,10 +22,10 @@ export default function index() {
   const description = useRef(null);
   const isInView = useInView(description);
   return (
-    <div ref={description} className={`${styles.description} text-white`}>
+    <div ref={description} className={`${styles.description} text-black`}>
       <div className={styles.body}>
         <h2
-          className={`${headingFont2.className} tracking-normal md:text-[40px] text-[20px] font-thin heading-font`}
+          className={`${numFont.className} uppercase tracking-widest md:text-[40px] text-[20px] font-thin heading-font`}
           style={{ fontSize: "3rem" }}
         >
           {phrase.split(" ").map((word, index) => {
@@ -46,7 +46,7 @@ export default function index() {
         <motion.p
           variants={opacity}
           animate={isInView ? "open" : "closed"}
-          className="tracking-normal text-lg text-white md:text-lg font-thin "
+          className="tracking-normal text-lg text-black md:text-lg font-thin "
         >
           For over 20 years, we've mastered the art of crafting impeccable
           lifestyle standards that are both luxurious and sustainable.
@@ -60,11 +60,11 @@ export default function index() {
                     </Rounded> */}
           <button
             onClick={() => (window.location.href = "/about")}
-            className="btn-projects z-10 relative  bg-white md:px-8 md:py-4 px-6 py-4  rounded-full"
+            className="btn-contact z-10 relative  bg-black md:px-8 md:py-4 px-6 py-4  rounded-full"
           >
             <span className="z-30  text-nowrap text-sm relative flex uppercase items-center gap-1">
               About us
-              <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowUpRight className="arrow h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </button>
         </div>
@@ -75,7 +75,7 @@ export default function index() {
       <div className="md:flex grid grid-cols-2 gap-8 my-8 p-4 items-center content-center justify-between">
         <div className="flex flex-col items-center justify-center ">
           <p
-            className={`  text-nowrap whitespace-pre-wrap text-8xl font-normal tracking-normal text-white`}
+            className={`  text-nowrap blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
 
@@ -83,13 +83,13 @@ export default function index() {
             />
             +
           </p>
-          <p className={`text-white text-center leading-5 font-normal test `}>
+          <p className={`text-black text-center leading-5 font-normal test `}>
             Sq.ft. Land We Developed
           </p>
         </div>
         <div className="flex flex-col items-center justify-center">
           <p
-            className={` whitespace-pre-wrap text-8xl font-normal tracking-normal text-white`}
+            className={` blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
               
@@ -97,24 +97,24 @@ export default function index() {
             />
             +
           </p>
-          <p className="text-center leading-5 text-white">
+          <p className="text-center leading-5 text-black">
             Years of Experience
           </p>
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <p
-            className={` whitespace-pre-wrap text-8xl   font-normal tracking-normal text-white`}
+            className={` blackspace-pre-wrap text-8xl   font-normal tracking-normal text-black`}
           >
             <NumberTicker value={11}  />+
           </p>
-          <p className="text-center leading-5 text-white">
+          <p className="text-center leading-5 text-black">
             Successful Projects Delivered
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center text-white">
+        <div className="flex flex-col items-center justify-center text-black">
           <p
-            className={` whitespace-pre-wrap text-8xl font-normal tracking-normal text-white`}
+            className={` blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
               
