@@ -4,7 +4,7 @@ const page = () => {
   return (
     <main className="container mx-auto text-black px-4 my-[150px] py-10">
         <section className="mb-8">
-            <h2 className="text-8xl font-semibold mb-4">Term of Service</h2>
+            <h2 className="md:text-8xl text-6xl font-semibold mb-4">Term of Service</h2>
             <p className="text-gray-700">
                 Welcome to Dhuni Constructions Pvt. Ltd. By accessing or using our website and services, you agree to these Terms of Service. Please read them carefully before proceeding.
             </p>

@@ -4,7 +4,7 @@ const page = () => {
     return (
         <main className="container mx-auto text-black px-4 my-[150px] py-10">
             <section className="mb-8">
-                <h2 className="text-8xl font-semibold mb-4">Disclaimer</h2>
+                <h2 className="md:text-8xl text-6xl font-semibold mb-4">Disclaimer</h2>
                 <p className="text-gray-700">
                     The information on this website is for general purposes only. Dhuni Constructions Pvt. Ltd. makes no guarantees regarding accuracy or completeness.
                 </p>

@@ -97,7 +97,7 @@ const Page = () => {
       <div className="main-container hero-about w-[90vw] mx-auto h-auto pt-20 relative">
         <section className="note mt-10 founders-note">
           <h2
-            className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
+            className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);
@@ -116,7 +116,7 @@ const Page = () => {
             <div className="">
               <ImQuotesLeft className="text-cream text-10xl" />
               <p
-                className={`${numFont.className} text-8xl font-thin uppercase tracking-widest md:text-10xl text-black leading-snug`}
+                className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest md:text-10xl text-black leading-snug`}
               >
                 Great architecture isn’t just built; it’s felt, lived, and
                 remembered forever.
@@ -129,7 +129,7 @@ const Page = () => {
         </section>
         <div className="dhuni-desc mt-20 w-full text-black rounded-md">
           <h2
-            className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
+            className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);
@@ -174,7 +174,7 @@ const Page = () => {
         </div>
         <section className="values">
           <h2
-            className={`${headingFont2.className} text-black text-8xl mt-20`}
+            className={`${headingFont2.className} text-black md:text-8xl text-6xl mt-20`}
             ref={(el) => {
               if (el && !headingRefs.current.includes(el)) {
                 headingRefs.current.push(el);

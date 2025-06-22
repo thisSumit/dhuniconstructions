@@ -31,7 +31,7 @@ const Page = () => {
       <div className="flex justify-between items-end ">
         <div>
           <p className={`text-black text-4xl font-thin`}>Works</p>
-          <h2 className={`${numFont.className} text-8xl font-thin uppercase tracking-widest text-black`}>All Projects</h2>
+          <h2 className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest text-black`}>All Projects</h2>
         </div>
       </div>
 

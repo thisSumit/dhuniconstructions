@@ -81,7 +81,7 @@ export function ProjectDetails({ project }: { project: Property }) {
               <p className="w-[30%] font-bold">{project.event}</p>
               <p className="w-[30%] flex justify-end">Updated on {new Date().toLocaleDateString('en-GB', {day: '2-digit', month: 'short', year: 'numeric',})}</p>
             </div>
-            <h1 className="text-8xl uppercase font-bold text-gray-900 mb-4">
+            <h1 className="md:text-8xl text-6xl uppercase font-bold text-gray-900 mb-4">
               {project.title}
             </h1>
             <div className="flex text-xl items-center text-gray-600">
@@ -274,7 +274,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                 <div className="flex mb-[100px] flex-col md:flex-row w-full items-center gap-2">
                   <div className="flex flex-col gap-2">
                     <h2
-                      className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
+                      className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest`}
                     >
                       {project.ahead1}
                     </h2>
@@ -298,7 +298,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                   />
                   <div className="flex flex-col gap-2">
                     <h2
-                      className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
+                      className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest`}
                     >
                       {project.ahead2}
                     </h2>

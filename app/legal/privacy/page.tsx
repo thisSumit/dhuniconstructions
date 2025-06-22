@@ -4,7 +4,7 @@ const page = () => {
   return (
     <main className="container text-black mx-auto px-4 py-10 my-[150px]">
         <section className="mb-10">
-            <h2 className="text-8xl font-semibold mb-4">Privacy Policy</h2>
+            <h2 className="md:text-8xl text-6xl font-semibold mb-4">Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
                 Dhuni Constructions Pvt. Ltd. ("we," "our," or "us") values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you interact with our services.
             </p>

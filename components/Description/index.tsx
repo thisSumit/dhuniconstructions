@@ -75,7 +75,7 @@ export default function index() {
       <div className="md:flex grid grid-cols-2 gap-8 my-8 p-4 items-center content-center justify-between">
         <div className="flex flex-col items-center justify-center ">
           <p
-            className={`  text-nowrap blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
+            className={`  text-nowrap blackspace-pre-wrap md:text-8xl text-6xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
 
@@ -89,7 +89,7 @@ export default function index() {
         </div>
         <div className="flex flex-col items-center justify-center">
           <p
-            className={` blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
+            className={` blackspace-pre-wrap md:text-8xl text-6xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
               
@@ -104,7 +104,7 @@ export default function index() {
 
         <div className="flex flex-col items-center justify-center">
           <p
-            className={` blackspace-pre-wrap text-8xl   font-normal tracking-normal text-black`}
+            className={` blackspace-pre-wrap md:text-8xl text-6xl   font-normal tracking-normal text-black`}
           >
             <NumberTicker value={11}  />+
           </p>
@@ -114,7 +114,7 @@ export default function index() {
         </div>
         <div className="flex flex-col items-center justify-center text-black">
           <p
-            className={` blackspace-pre-wrap text-8xl font-normal tracking-normal text-black`}
+            className={` blackspace-pre-wrap md:text-8xl text-6xl font-normal tracking-normal text-black`}
           >
             <NumberTicker
               

@@ -22,8 +22,8 @@ const Index = ({id}: {id?: number}) => {
       
       <div className="flex justify-between items-end">
         <div>
-          <p className={`text-6xl font-normal text-black`}>Work</p>
-          <h2 className={`${numFont.className} uppercase tracking-widest text-8xl text-nowrap text-black`}>Our Projects</h2>
+          <p className={`text-6xl font-thin text-black`}>Work</p>
+          <h2 className={`${numFont.className} uppercase tracking-widest md:text-8xl text-6xl text-nowrap text-black`}>Our Projects</h2>
         </div>
         <div>
           <button

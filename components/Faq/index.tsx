@@ -22,12 +22,12 @@ const Index = () => {
   return (
     <div className="flex flex-col md:p-[200px] py-[200px] px-2">
       <div>
-        <p className="text-lg font-normal text-black">FAQ</p>
-        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl text-black`}>
+        <p className="text-lg font-thin text-black">FAQ</p>
+        <h2 className={`${numFont.className} uppercase tracking-widest md:text-8xl text-6xl text-black`}>
           Frequently Asked Questions
         </h2>
         <Accordion
-          className="text-black rounded-md font-normal"
+          className="rounded-md"
           type="single"
           collapsible
         >

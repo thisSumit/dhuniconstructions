@@ -58,7 +58,7 @@ export default function Contact() {
     <div id='contact' className="text-black py-[100px] p-3 md:px-[200px]">
       <div>
         <p className='text-lg font-thin'>Get in Touch</p>
-        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl`}>Contact Us</h2>
+        <h2 className={`${numFont.className} uppercase tracking-widest md:text-8xl text-6xl`}>Contact Us</h2>
       </div>
 
       <div className="grid gap-12 my-2 lg:grid-cols-2">

@@ -48,11 +48,11 @@ const Hero = () => {
       {/* Heading */}
       <div className="w-full md:flex items-center md:items-baseline gap-3 mb-4 justify-center text-black">
         <p
-          className={`${numFont.className} uppercase tracking-widest text-8xl font-normal`}
+          className={`${numFont.className} uppercase tracking-widest md:text-8xl text-6xl font-normal`}
         >
           Inspirational
         </p>
-        <h2 className={`${numFont.className} uppercase tracking-widest text-8xl`}>
+        <h2 className={`${numFont.className} uppercase tracking-widest md:text-8xl text-6xl`}>
           Lifestyle
         </h2>
       </div>

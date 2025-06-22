@@ -34,7 +34,7 @@ const Index = () => {
     <div /* className="pt-[200px] px-4 w-full h-full" */>
 {/*       <div className="w-full flex items-baseline gap-1 mb-4 justify-center">
       <p className="text-lg font-thin text-white">What our</p>
-      <h2 className={`${headingFont2.className} text-8xl text-white`}>Customers Says?</h2>
+      <h2 className={`${headingFont2.className} md:text-8xl text-6xl text-white`}>Customers Says?</h2>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2 h-full w-full gap-8">
         {videoSources.map((src, index) => (

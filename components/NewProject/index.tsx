@@ -59,15 +59,15 @@ const index = () => {
         <div className=" sm:p-0  md:p-4 md:order-1 flex-col justify-center items-start text-black order-last">
           <div>
             <p
-              className={`${numFont.className} text-8xl font-thin uppercase tracking-widest`}
+              className={`${numFont.className} md:md:text-8xl text-6xl text-6xl font-thin uppercase tracking-widest`}
             >
-              Upcoming Project
+              New Project
             </p>
             
             <Image
               width={10000}
               height={10000}
-              className="w-[280px] mt-8 mb-4 rounded-md"
+              className="md:w-[280px] w-[220px] mt-8 mb-4 rounded-md"
               src="/arctic-logo.png"
               alt="arctic apartments"
             />
