@@ -6,24 +6,24 @@ const page = () => {
         <section className="mb-10">
             <h2 className="md:text-8xl text-6xl font-semibold mb-4">Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
-                Dhuni Constructions Pvt. Ltd. ("we," "our," or "us") values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you interact with our services.
+                Dhuni Constructions Pvt. Ltd. ("we," "our," or "us") values your privacy. This Privacy Policy explains how we collect, use, & protect your personal information when you interact with our services.
             </p>
         </section>
 
         <section className="mb-8">
             <h3 className="text-lg md:text-xl font-semibold mb-3">Information We Collect</h3>
             <ul className="list-disc pl-6 text-gray-700">
-                <li><strong>Personal Information:</strong> Name, email address, phone number, and details provided through forms.</li>
-                <li><strong>Non-Personal Information:</strong> Browser type, IP address, and usage data via cookies and analytics tools.</li>
+                <li><strong>Personal Information:</strong> Name, email address, phone number, & details provided through forms.</li>
+                <li><strong>Non-Personal Information:</strong> Browser type, IP address, & usage data via cookies & analytics tools.</li>
             </ul>
         </section>
 
         <section className="mb-8">
             <h3 className="text-lg md:text-xl font-semibold mb-3">How We Use Your Information</h3>
             <ul className="list-disc pl-6 text-gray-700">
-                <li>To provide and improve our services.</li>
+                <li>To provide & improve our services.</li>
                 <li>To communicate updates, offers, or project information.</li>
-                <li>To process bookings and provide customer support.</li>
+                <li>To process bookings & provide customer support.</li>
             </ul>
         </section>
 

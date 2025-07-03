@@ -59,9 +59,9 @@ const index = () => {
         <div className=" sm:p-0  md:p-4 md:order-1 flex-col justify-center items-start text-black order-last">
           <div>
             <p
-              className={`${numFont.className} md:md:text-8xl text-6xl text-6xl font-thin uppercase tracking-widest`}
+              className={`${numFont.className} md:md:text-8xl text-6xl font-thin uppercase tracking-widest`}
             >
-              New Project
+              Ongoing Project
             </p>
             
             <Image
@@ -72,11 +72,11 @@ const index = () => {
               alt="arctic apartments"
             />
 
-            <p className="max-w-3xl font-thin text-md leading-normal">
+            <p className="max-w-3xl font-thin text-md text-justify leading-normal">
               Discover Arctic Luxurious Apartments, Where modern design meets
-              premium living. With sleek architecture, curving balconies, and 6+
+              premium living. With sleek architecture, curving balconies, & 6+
               world-class amenities, Arctic offers an elevated lifestyle of
-              elegance, comfort, and innovation.
+              elegance, comfort, & innovation.
             </p>
           </div>
           <div className="flex flex-col items-start justify-between">
@@ -116,7 +116,7 @@ const index = () => {
 
             <div className="flex gap-3 py-2">
               <button
-                onClick={() => (window.location.href = "/contact")}
+                onClick={() => (window.location.href = "/projects/artic")}
                 className="btn-contact"
               >
                 <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">
@@ -126,7 +126,7 @@ const index = () => {
                 <div className="absolute inset-0 -z-0 bg-gradient-to-r from- opacity-0 transition-opacity duration-300 group-hover:opacity-10" />
               </button>
               <button
-                onClick={() => (window.location.href = "/projects/artic")}
+                onClick={() => (window.location.href = "/contact")}
                 className="btn-contact"
               >
                 <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">
@@ -138,14 +138,14 @@ const index = () => {
           </div>
         </div>
         <div className="flex md:order-2 sm:items-center sm:justify-center order-first mb-10">
-
           <Image
-          width={10000}
-            height={10000}
-            className="w-full h-auto sm:w-[300px] lg:w-[80%] lg:h-full rounded-md"
-            src="/arctic.png"
-            alt="Arctic Apartment Project Dhuni Constructions"
-          />
+  width={800}
+  height={500}
+  src="/arctic.png"
+  alt="Arctic Apartment Project Dhuni Constructions"
+  className="w-full h-auto sm:w-[300px] lg:w-[80%] lg:h-full rounded-md"
+/>
+
         </div>
       </div>
     </div>

@@ -45,7 +45,7 @@ const Index = () => {
               What are the benefits of under-construction flats?
             </AccordionTrigger>
             <AccordionContent className="text-md">
-              Early booking discounts, flexible payment options, and scope for customizing interiors before completion.
+              Early booking discounts, flexible payment options, & scope for customizing interiors before completion.
             </AccordionContent>
           </AccordionItem>
 
@@ -54,7 +54,7 @@ const Index = () => {
               How do you ensure construction quality?
             </AccordionTrigger>
             <AccordionContent className="text-md">
-              We use top-grade materials and follow strict quality checks at every stage.
+              We use top-grade materials & follow strict quality checks at every stage.
             </AccordionContent>
           </AccordionItem>
 

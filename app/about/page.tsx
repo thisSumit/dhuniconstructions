@@ -116,12 +116,12 @@ const Page = () => {
             <div className="">
               <ImQuotesLeft className="text-cream text-10xl" />
               <p
-                className={`${numFont.className} md:text-8xl text-6xl font-thin uppercase tracking-widest md:text-10xl text-black leading-snug`}
+                className={`${numFont.className} text-6xl font-thin uppercase tracking-widest md:text-10xl text-black leading-snug`}
               >
-                Great architecture isn’t just built; it’s felt, lived, and
+                Great architecture isn’t just built; it’s felt, lived, &
                 remembered forever.
               </p>
-              <p className="italic text-black font-thin">
+              <p className="italic text-black uppercase font-thin">
                 Directors- Mr. Amit Tarekar & Mr. Swapnil Gode
               </p>
             </div>
@@ -167,8 +167,8 @@ const Page = () => {
           </div>
 
           <div className="about-content flex flex-col-reverse xl:flex-row gap-2">
-            <p className="font-thin text-justify text-lg">
-              Dhuni Constructions Pvt. Ltd., established in 2012 by Amit Tarekar and Swapnil Gode, is a premier construction company based in Nagpur. We specialize in crafting residential and commercial spaces that epitomize luxury, quality, and simplicity. Our commitment to exceptional architecture and meticulous craftsmanship ensures that each project enhances lives through timeless design and functionality. With a focus on customer satisfaction, we transform visions into reality, delivering excellence at every step.
+            <p className="font-thin text-justify uppercase text-lg">
+              Dhuni Constructions Pvt. Ltd., established in 2012 by Mr. Amit Tarekar & Mr. Swapnil Gode, is a premier construction company based in Nagpur. We specialize in crafting residential & commercial spaces that epitomize luxury, quality, & simplicity. Our commitment to exceptional architecture & meticulous craftsmanship ensures that each project enhances lives through timeless design & functionality. With a focus on customer satisfaction, we transform visions into reality, delivering excellence at every step.
             </p>
           </div>
         </div>
@@ -194,11 +194,11 @@ const Page = () => {
                 src="/luxury.png"
                 alt="luxury"
               />
-              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black font-normal tracking-[5px] text-6xl mb-4 uppercase">
                 Luxury
               </h3>
-              <p className="text-black text-lg font-thin">
-                We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, and premium finishes perfect for modern families seeking upscale living.
+              <p className="text-black text-lg text-justify font-thin">
+                We craft luxurious apartments in Nagpur with elegant designs, spacious layouts, & premium finishes perfect for modern families seeking upscale living.
               </p>
             </div>
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">
@@ -209,11 +209,11 @@ const Page = () => {
                 src="/quality.png"
                 alt="quality"
               />
-              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black font-normal tracking-[5px] text-6xl mb-4 uppercase">
                 Quality
               </h3>
-              <p className="text-black text-lg font-thin">
-                Each home is constructed using top-grade materials and skilled workmanship, ensuring durability, safety, and long-term value.
+              <p className="text-black text-lg text-justify font-thin">
+                Each home is constructed using top-grade materials & skilled workmanship, ensuring durability, safety, & long-term value.
               </p>
             </div>
             <div className="value-card rounded-md flex flex-col items-center justify-center p-5 ">
@@ -224,11 +224,11 @@ const Page = () => {
                 src="/simplicity.png"
                 alt="simplicity"
               />
-              <h3 className="text-black font-normal text-6xl mb-4 uppercase">
+              <h3 className="text-black tracking-[5px] font-normal text-6xl mb-4 uppercase">
                 Simplicity
               </h3>
-              <p className="text-black text-lg font-thin">
-               Our homes feature minimal, intelligent designs that offer comfort, easy maintenance, and efficient everyday living.
+              <p className="text-black text-lg text-justify font-thin">
+               Our homes feature minimal, intelligent designs that offer comfort, easy maintenance, & efficient everyday living.
               </p>
             </div>
           </div>

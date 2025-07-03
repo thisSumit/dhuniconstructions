@@ -32,7 +32,7 @@ const page = () => {
             </section>
 
             <section className="mb-8">
-                <h3 className="text-lg font-semibold mb-3">4. Updates and Changes</h3>
+                <h3 className="text-lg font-semibold mb-3">4. Updates & Changes</h3>
                 <p className="text-gray-700">
                     We reserve the right to update this Disclaimer at any time. Users are responsible for reviewing it periodically.
                 </p>

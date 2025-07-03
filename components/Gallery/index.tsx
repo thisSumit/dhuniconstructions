@@ -85,7 +85,7 @@ const GridAnimation: React.FC = () => {
           We know the Art Of Luxury
         </h2>
         <p className="text-black font-thin">
-          Experience the pinnacle of craftsmanship and design through our curated gallery, where every project reflects unparalleled elegance and timeless sophistication.
+          Experience the pinnacle of craftsmanship & design through our curated gallery, where every project reflects unparalleled elegance & timeless sophistication.
         </p>
       </div>
       <div className="overflow-hidden">

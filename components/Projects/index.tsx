@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import localFont from "next/font/local";
 import { ArrowRight, ArrowUpRight, ArrowUpRightFromSquare, MapPin } from 'lucide-react';
+import Image from "next/image";
 
 const numFont = localFont({
   src: "../../app/fonts/wasted.ttf",
@@ -69,14 +70,21 @@ const ProjectCard = ({ item }: { item: typeof portfolioItems[number] }) => {
         ></motion.div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-0 left-0 p-6 text-black">
-            <p className="text-white leading-6 text-6xl mb-1 font-bold">{item.title}</p>
-            <p className="flex items-end gap-1 mb-2 leading-5 text-2xl font-light text-white"><MapPin className="w-4"></MapPin>{item.location}</p>
-            <div className="flex items-center py-1 text-white hover:text-cream transition-colors uppercase">
+        <div className="absolute inset-0 bg-gradient-to-t from-white/100 via-white/0 to-transparent md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute flex w-full justify-center bottom-0 px-8 text-black">
+            <Image
+                            width={2000}
+                            height={1000}
+                            src={item.logo}
+                            alt={item.title}
+                            className="w-[250px] md:w-[350px] h-full outline rounded-lg"
+                          />
+            {/* <p className="text-white leading-6 text-6xl mb-1 font-bold">{item.title}</p>
+            <p className="flex items-end gap-1 mb-2 leading-5 text-2xl font-light text-white"><MapPin className="w-4"></MapPin>{item.location}</p> */}
+            {/* <div className="flex items-center py-1 text-white hover:text-cream transition-colors uppercase">
               <span>View Project</span>
               <ArrowUpRight className="w-5 h-5" />
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>

@@ -18,7 +18,7 @@ const headingFont2 = localFont({
 });
 
 export default function index() {
-  const phrase = "We  craft  home  with  Luxury  Quality  and  Simplicity";
+  const phrase = "We  craft  home  with  Luxury  Quality  &  Simplicity";
   const description = useRef(null);
   const isInView = useInView(description);
   return (
@@ -46,12 +46,12 @@ export default function index() {
         <motion.p
           variants={opacity}
           animate={isInView ? "open" : "closed"}
-          className="tracking-normal text-lg text-black md:text-lg font-thin "
+          className="tracking-normal text-lg uppercase text-justify text-black md:text-lg font-thin "
         >
           For over 20 years, we've mastered the art of crafting impeccable
-          lifestyle standards that are both luxurious and sustainable.
+          lifestyle standards that are both luxurious & sustainable.
           Experience the future of Dhuni Constructions Pvt. Ltd., where timeless
-          elegance and modern sustainability converge to create a truly
+          elegance & modern sustainability converge to create a truly
           unparalleled living experience.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>

@@ -6,26 +6,26 @@ const page = () => {
         <section className="mb-8">
             <h2 className="md:text-8xl text-6xl font-semibold mb-4">Term of Service</h2>
             <p className="text-gray-700">
-                Welcome to Dhuni Constructions Pvt. Ltd. By accessing or using our website and services, you agree to these Terms of Service. Please read them carefully before proceeding.
+                Welcome to Dhuni Constructions Pvt. Ltd. By accessing or using our website & services, you agree to these Terms of Service. Please read them carefully before proceeding.
             </p>
         </section>
 
         <section className="mb-8">
             <h3 className="text-lg font-semibold mb-3">1. Ownership</h3>
             <p className="text-gray-700">
-                All content, designs, and intellectual property on this website are owned by Dhuni Constructions Pvt. Ltd. Unauthorized use is strictly prohibited.
+                All content, designs, & intellectual property on this website are owned by Dhuni Constructions Pvt. Ltd. Unauthorized use is strictly prohibited.
             </p>
         </section>
 
         <section className="mb-8">
             <h3 className="text-lg font-semibold mb-3">2. User Responsibilities</h3>
             <p className="text-gray-700">
-                Users agree to provide accurate information and not misuse our website for fraudulent activities or security breaches.
+                Users agree to provide accurate information & not misuse our website for fraudulent activities or security breaches.
             </p>
         </section>
 
         <section className="mb-8">
-            <h3 className="text-lg font-semibold mb-3">3. Bookings and Payments</h3>
+            <h3 className="text-lg font-semibold mb-3">3. Bookings & Payments</h3>
             <p className="text-gray-700">
                 All bookings are subject to availability. Payment terms will be communicated during the booking process.
             </p>

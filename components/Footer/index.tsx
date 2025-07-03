@@ -23,18 +23,18 @@ export default function Footer() {
               <Image
               src={dhuniLogo}
               alt="Company Logo"
-              width={30}
-              height={30}
+              width={35}
+              height={35}
             />
-              <p className="flex flex-row gap-1 items-baseline">
+              <p className="flex flex-row gap-1 md:text-6xl text-4xl items-baseline">
                 <span className={`${myFont.className} flex flex-col`}>
                   DHUNI
                 </span>
                 CONSTRUCTIONS PVT. LTD.
               </p>
             </Link>
-            <p className="mb-4 max-w-md text-gray-400">
-            We build homes with Trust, Quality, and Excellence. As the Best Construction and Builder Company in Nagpur, We deliver unmatched Luxury, Quality, and Simplicity in every project.
+            <p className="mb-4 max-w-md uppercase text-gray-400">
+            We build homes with Trust, Quality, & Excellence. As the Best Construction & Builder Company in Nagpur, We deliver unmatched Luxury, Quality, & Simplicity in every project.
             </p>
             <div className="flex gap-4">
             <a href="https://www.facebook.com/Dhuniconstructionsnagpur/" className="rounded-full bg-gray-800 p-2 transition-colors duration-300 hover:bg-gold">
@@ -102,7 +102,7 @@ export default function Footer() {
 
 <p className="text-gray my-4 px-3 text-xs">Explore BHK Wise Flats for Sale in Nagpur
 
-Discover a diverse range of 1 BHK, 2 BHK, 3 BHK, 4 BHK, and 5 BHK flats for sale in Nagpur. Whether you are a first-time buyer or looking to upgrade, Nagpur offers a variety of options tailored to your needs.
+Discover a diverse range of 1 BHK, 2 BHK, 3 BHK, 4 BHK, & 5 BHK flats for sale in Nagpur. Whether you are a first-time buyer or looking to upgrade, Nagpur offers a variety of options tailored to your needs.
 
 Top Localities in Nagpur
 Find your dream home in some of the most sought-after areas:
