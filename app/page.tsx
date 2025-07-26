@@ -1,31 +1,24 @@
 'use client'
-import Contact from "@/components/Contact";
 import Description from "@/components/Description";
 import Faq from "@/components/Faq";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Lifestyle from "@/components/Lifestyle";
 import NewProject from "@/components/NewProject";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery"
+import SEOContent from "@/components/SEOContent";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 
 
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       const lenis = new Lenis();
-
-/*       lenis.on('scroll', (e: any) => {
-        console.log(e);
-      }); */
 
       function raf(time: number) {
         lenis.raf(time);
@@ -35,16 +28,9 @@ export default function Home() {
       requestAnimationFrame(raf);
 
       setTimeout(() => {
-        setIsLoading(false);
         document.body.style.cursor = 'default';
         window.scrollTo(0, 0);
       }, 10);
-
-      // Dynamically import LocomotiveScroll after mounting
-/*       import('locomotive-scroll').then((module) => {
-        const LocomotiveScroll = module.default;
-        const locomotiveScroll = new LocomotiveScroll();
-      }); */
     }
   }, []);
   
@@ -58,6 +44,10 @@ export default function Home() {
     <Testimonials/>
     <Gallery />
     <Faq/>
+    {/* Hidden SEO Content - Searchable but not visible to users */}
+    <div className="sr-only" aria-hidden="true">
+      <SEOContent />
+    </div>
     </main>
   );
 }

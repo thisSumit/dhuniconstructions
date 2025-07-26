@@ -114,7 +114,7 @@ export const portfolioItems = [
     price: "1.24 Cr",
     img: "/neptune.png",
     logo: "/neptune-logo.png",
-    event: "Only 2 Units Available",
+    event: "Only 6 Units Available",
     rerano: "P50500055862",
     reraqr:"/neptuneqr.png",
     vacant: "Only 2 Flats Left",
@@ -134,7 +134,7 @@ export const portfolioItems = [
     apara2:'Crafted for those who value excellence.',
     aimg1:'/4.jpg',
     aimg2:'/5.jpg',
-    mapUrl:"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d232.6369315103608!2d79.05204838501889!3d21.10495390513263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1732725989574!5m2!1sen!2sin"
+    mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458.7066484754452!2d79.0517451367246!3d21.10505901293788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf003b24139d%3A0x3093b739b1e6532!2sNeptune%20Apartment%20by%20Dhuni%20Constructions!5e0!3m2!1sen!2sin!4v1753535159153!5m2!1sen!2sin"
   },
   {
     className: "",

@@ -15,6 +15,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import "../../components/Hero/imp.scss";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { trackContactNow, trackDownloadBrochure } from "@/lib/gtm";
 
 const headingFont2 = localFont({
   src: "../../app/fonts/new.ttf",
@@ -178,16 +179,20 @@ export function ProjectDetails({ project }: { project: Property }) {
               <div className="border-l max-w-3xl shadow-sm py-2 mb-5 p-8 top-20">
                 <div className="space-y-4">
                   <button
-                    onClick={() =>
-                      (window.location.href = `https://wa.me/+918830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`)
-                    }
+                    onClick={() => {
+                      trackDownloadBrochure('project_details_page', project.title);
+                      window.location.href = `https://wa.me/+918830256985?text=I'm%20inquiring%20about%20the%20apartment%20listing%20${project.title}`;
+                    }}
                     className={`btn-contact w-full bg-blue-600 border text-black py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors`}
                   >
                     Download Brochure
                   </button>
 
                   <button
-                    onClick={() => (window.location.href = "tel:+918830256985")}
+                    onClick={() => {
+                      trackContactNow('project_details_page', project.title);
+                      window.location.href = "tel:+918830256985";
+                    }}
                     className={`btn-contact w-full bg-cream text-black border border-blue-600 text-blue-600 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors`}
                   > <GoogleTagManager gtmId="AW-577226494" />
                     Contact Now

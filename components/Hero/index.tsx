@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight, Volume2, VolumeX } from "lucide-react";
 import localFont from "next/font/local";
 import "../Hero/imp.scss";
 import { usePathname } from "next/navigation";
+import { trackContactUs } from "@/lib/gtm";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -96,7 +97,10 @@ const Hero = () => {
             </span>
           </button>
           <button
-            onClick={() => (window.location.href = "/contact")}
+            onClick={() => {
+              trackContactUs('hero_section');
+              window.location.href = "/contact";
+            }}
             className="btn-projects z-10 relative  bg-white md:px-8 md:py-4 px-6 py-4  rounded-full"
           >
             <span className="z-30  text-nowrap text-sm relative flex uppercase items-center gap-1">

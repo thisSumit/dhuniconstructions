@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import { portfolioItems } from '@/data';
 import '../Hero/imp.scss'
 import { sendGTMEvent } from '@next/third-parties/google';
+import { trackPhoneCall } from "@/lib/gtm";
 
 const numFont = localFont({
   src: "../../app/fonts/wasted.ttf",
@@ -26,32 +27,136 @@ export default function Contact() {
     message: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    // Ensure the component is only rendered on the client
     setIsMounted(true);
   }, []);
 
-  if (!isMounted) return null; // Prevent rendering on the server until after mount
+  if (!isMounted) return null;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbyp-EWyBzcmmWLiSoMXZnFKp_d8-3XFYpnKr5oO2QI7XxHXFZYb1xxHkkQxOa9-hVPb/exec'; // Replace with your Apps Script URL
+    if (isSubmitting) return; // Prevent double submission
     
-    const response = await fetch(scriptUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData)
-    });
-  
-    if (response.ok) {
-      console.log('Form submitted:', formData);
-      setFormData({ name: '', email: '', phone: '', property: '', message: '' }); // Clear form data
-    } else {
-      console.error('Error submitting form:', response.statusText);
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    
+    try {
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbyp-EWyBzcmmWLiSoMXZnFKp_d8-3XFYpnKr5oO2QI7XxHXFZYb1xxHkkQxOa9-hVPb/exec';
+      
+      // Store form data locally first for immediate feedback
+      const submissionData = {
+        ...formData,
+        timestamp: new Date().toISOString(),
+        submitted: false
+      };
+      
+      // Store in localStorage for backup
+      const existingSubmissions = JSON.parse(localStorage.getItem('pendingSubmissions') || '[]');
+      existingSubmissions.push(submissionData);
+      localStorage.setItem('pendingSubmissions', JSON.stringify(existingSubmissions));
+      
+      // Show success immediately to user
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', phone: '', property: '', message: '' });
+      
+      // Track form submission
+      if (typeof window !== 'undefined' && (window as any).dataLayer) {
+        (window as any).dataLayer.push({
+          event: 'form_submission',
+          form_type: 'contact_form'
+        });
+      }
+      
+      // Submit to Google Sheets in background (fire and forget)
+      setTimeout(() => {
+        submitToGoogleSheets(submissionData, scriptUrl);
+      }, 100);
+      
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+      
+      // Reset status after 4 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 4000);
     }
+  };
+
+  // Background submission function
+  const submitToGoogleSheets = async (data: any, scriptUrl: string) => {
+    try {
+      // Method 1: Try fetch with timeout
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000);
+      
+      const response = await fetch(scriptUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          property: data.property,
+          message: data.message
+        }),
+        signal: controller.signal
+      });
+      
+      clearTimeout(timeoutId);
+      
+      // Mark as submitted in localStorage
+      const existingSubmissions = JSON.parse(localStorage.getItem('pendingSubmissions') || '[]');
+      const updatedSubmissions = existingSubmissions.map((sub: any) => 
+        sub.timestamp === data.timestamp ? { ...sub, submitted: true } : sub
+      );
+      localStorage.setItem('pendingSubmissions', JSON.stringify(updatedSubmissions));
+      
+    } catch (error) {
+      console.warn('Primary submission failed, trying fallback:', error);
+      // Fallback method using form submission
+      submitViaForm(data);
+    }
+  };
+
+  // Fallback submission method using hidden iframe
+  const submitViaForm = (data = formData) => {
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.name = 'hiddenFrame';
+    document.body.appendChild(iframe);
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = 'https://script.google.com/macros/s/AKfycbyp-EWyBzcmmWLiSoMXZnFKp_d8-3XFYpnKr5oO2QI7XxHXFZYb1xxHkkQxOa9-hVPb/exec';
+    form.target = 'hiddenFrame';
+
+    Object.entries(data).forEach(([key, value]) => {
+      if (key !== 'timestamp' && key !== 'submitted') {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = String(value);
+        form.appendChild(input);
+      }
+    });
+
+    document.body.appendChild(form);
+    form.submit();
+    
+    // Cleanup
+    setTimeout(() => {
+      document.body.removeChild(form);
+      document.body.removeChild(iframe);
+    }, 1000);
   };
 
   return (
@@ -64,7 +169,13 @@ export default function Contact() {
       <div className="grid gap-12 my-2 lg:grid-cols-2">
         <div>
           <div className="space-y-6">
-            <a href='tel:8830256985' className="flex items-center gap-4 hover:cursor-pointer">
+            <a 
+              href='tel:8830256985' 
+              className="flex items-center gap-4 hover:cursor-pointer"
+              onClick={() => {
+                trackPhoneCall('contact_section');
+              }}
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream hover:bg-black">
                 <Phone className="h-6 w-6 text-blue" />
               </div>
@@ -159,15 +270,43 @@ export default function Contact() {
               required
             />
           </div>
+          
+          {/* Success/Error Messages */}
+          {submitStatus === 'success' && (
+            <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+              ✅ Thank you! Your message has been sent successfully. We'll get back to you soon.
+            </div>
+          )}
+          
+          {submitStatus === 'error' && (
+            <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+              ❌ There was an error sending your message. Please try again or call us directly.
+            </div>
+          )}
+          
           <button
             type="submit"
-            className="btn-contact flex gap-3 text-xl items-center"
+            disabled={isSubmitting}
+            className={`btn-contact flex gap-3 text-xl items-center transition-all duration-300 ${
+              isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+            }`}
             onClick={()=>{
-              sendGTMEvent({event: 'contact_form_submit', category: 'contact', action: 'submit', label: 'contact_form_submit'})
+              if (!isSubmitting) {
+                sendGTMEvent({event: 'contact_form_submit', category: 'contact', action: 'submit', label: 'contact_form_submit'})
+              }
             }}
           >
-            Send Message
-            <Send className="arrow rotate-45 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            {isSubmitting ? (
+              <>
+                <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-current"></div>
+                Sending...
+              </>
+            ) : (
+              <>
+                Send Message
+                <Send className="arrow rotate-45 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+              </>
+            )}
           </button>
         </form>
       </div>

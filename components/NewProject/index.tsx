@@ -6,6 +6,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import "../Hero/imp.scss";
 import { motion } from "framer-motion";
+import { trackContactUs } from "@/lib/gtm";
 gsap.registerPlugin(ScrollTrigger);
 
 const numFont = localFont({
@@ -126,7 +127,10 @@ const index = () => {
                 <div className="absolute inset-0 -z-0 bg-gradient-to-r from- opacity-0 transition-opacity duration-300 group-hover:opacity-10" />
               </button>
               <button
-                onClick={() => (window.location.href = "/contact")}
+                onClick={() => {
+                  trackContactUs('new_project_section');
+                  window.location.href = "/contact";
+                }}
                 className="btn-contact"
               >
                 <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">
