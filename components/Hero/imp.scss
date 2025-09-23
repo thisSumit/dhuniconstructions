@@ -1,0 +1,83 @@
+
+.btn-projects {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #fff3d8;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-contact {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn-contact .arrow {
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-projects::before,
+.btn-contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff3d8;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+
+.btn-projects:hover::before,
+.btn-contact:hover::before {
+    width: 100%;
+}
+
+.btn-projects:hover,
+.btn-contact:hover {
+    color: black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-contact:hover .arrow {
+    transform: rotate(0deg);
+}
+
+@media (max-width: 640px) { 
+    .btn-projects
+    {
+        padding: 0.6rem 1.2rem; 
+        font-size: 0.65rem;
+        border: 1.2px solid #fff3d8; 
+        border-radius: 4px; 
+    }
+    .btn-contact {
+        padding: 0.6rem 1.2rem; 
+        font-size: 0.65rem;
+        border: 1.2px solid black; 
+        border-radius: 4px; 
+    }
+}
+
