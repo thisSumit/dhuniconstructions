@@ -117,7 +117,7 @@ const index = () => {
 
             <div className="flex gap-3 py-2">
               <button
-                onClick={() => (window.location.href = "/artic")}
+                onClick={() => (window.location.href = "/arctic")}
                 className="btn-contact"
               >
                 <span className="text-nowrap text-sm relative z-10 flex items-center gap-2">

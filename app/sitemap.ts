@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       },
       {
-        url: 'https://dhuniconstructions.com/artic',
+        url: 'https://dhuniconstructions.com/arctic',
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: 0.7,
