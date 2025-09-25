@@ -161,7 +161,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-medium text-gray-900">Call Us</p>
-                <p className="text-gray-600">+91-8830256985</p>
+                <p className="text-gray-600">+91 8830256985 | +91 8262899382</p>
               </div>
             </a>
             <a href='mailto:dhuniconstructionspvtltd@gmail.com' className="flex items-center gap-4 hover:cursor-pointer">

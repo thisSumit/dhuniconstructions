@@ -72,7 +72,7 @@ const Index = () => {
               How do I contact Dhuni Constructions?
             </AccordionTrigger>
             <AccordionContent className="text-md">
-              Fill out our contact form or call us at +91 8830256985. Visit: Flat No. 202, Ganraj Sankul, Pratap Nagar, Nagpur.
+              Fill out our contact form or call us at +91 8830256985 | +91 8262899382. Visit: Flat No. 202, Ganraj Sankul, Pratap Nagar, Nagpur.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

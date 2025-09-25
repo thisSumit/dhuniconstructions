@@ -195,7 +195,7 @@ export function ProjectDetails({ project }: { project: Property }) {
                   </h3>
                   <div className="space-y-3 text-gray-600">
                     <p>Email: dhuniconstructionspvtltd@gmail.com</p>
-                    <p>Phone: +91 8830256985</p>
+                    <p>Phone: +91 8830256985 | +91 8262899382</p>
                     <p>Office Hours: 10:00 AM - 8:00 PM</p>
                   </div>
                 </div>

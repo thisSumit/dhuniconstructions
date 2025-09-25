@@ -9,7 +9,7 @@ import Whatsapp from "@/components/Whatsapp";
 
 export const metadata: Metadata = {
   title: "Best Apartments & Flats for Sale in Nagpur | Dhuni Constructions",
-  description: "Find the best apartments & flats for sale in Nagpur. Premium 1 BHK, 2 BHK, 3 BHK & 4 BHK apartments near you. Ready to move & under construction flats in prime locations of Nagpur. Contact +91-8830256985",
+  description: "Find the best apartments & flats for sale in Nagpur. Premium 1 BHK, 2 BHK, 3 BHK & 4 BHK apartments near you. Ready to move & under construction flats in prime locations of Nagpur. Contact +91 8830256985 | +91 8262899382",
   keywords: [
     "best apartment near me",
     "flat for sale in nagpur", 
