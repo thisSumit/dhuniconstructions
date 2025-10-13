@@ -20,8 +20,9 @@ export async function POST(req: Request) {
     // Format phone number
     const formattedPhone = phone.startsWith('+91') ? phone : `+91${phone.replace(/\D/g, '')}`;
 
-    // Generate unique DumpdataObjectId (timestamp-based)
-    const dumpId = new Date().toISOString().replace(/[-:.TZ]/g, "").substring(0, 13);
+    // Generate unique DumpdataObjectId with datetime stamp
+    const now = new Date();
+    const dumpId = `${now.getDate().toString().padStart(2, '0')}${(now.getMonth() + 1).toString().padStart(2, '0')}${now.getFullYear()}${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}${now.getSeconds().toString().padStart(2, '0')}`;
 
     // Prepare ERP payload
     const erpPayload = {
@@ -33,7 +34,7 @@ export async function POST(req: Request) {
       originFrom: "Website",
       product: property || "",
       campaign: "Website Lead",
-      isUpdatefromUIDate: false,
+      isUpdatefromUIDate: false, 
       isImported: true,
       DumpdataObjectId: dumpId,
       tenantId: 918,
